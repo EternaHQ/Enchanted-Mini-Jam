@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bh65c7ue06ckp"]
 
 [ext_resource type="Texture2D" uid="uid://cr24vcydkfqhv" path="res://Assets/Sprites/IMG_0263.PNG" id="1_0t22i"]
-[ext_resource type="Script" uid="uid://c67x3ly6tijlm" path="res://cauldron.gd" id="2_q3ljf"]
+[ext_resource type="Script" uid="uid://c67x3ly6tijlm" path="res://Scripts/cauldron.gd" id="2_q3ljf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4plfi"]
 radius = 165.0
