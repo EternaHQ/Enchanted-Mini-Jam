@@ -10,13 +10,14 @@ extends CharacterBody2D
 var coyote_timer: float = 0.0
 var jump_start_y: float = 0.0
 var is_jumping: bool = false
+func _ready() -> void:
+	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
 	update_coyote_timer(delta)
 	handle_input()
 	velocity.y += gravity * delta
 	move_and_slide()
-
 func handle_input() -> void:
 	# Sprung starten (am Boden oder kurz nach dem Verlassen der Kante)
 	if Input.is_action_just_pressed("Up") and coyote_timer > 0.0:
