@@ -1,8 +1,13 @@
-[gd_scene format=3 uid="uid://dfvnknq61kptq"]
+[gd_scene format=3 uid="uid://ck0fxugrbtgja"]
 
-[ext_resource type="PackedScene" uid="uid://b1ggorpt8eye1" path="res://Scenes/Test.tscn" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://Scenes/Player.tscn" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://8j1l6o7sn5fl" path="res://Scenes/test_boden.tscn" id="2_idj7w"]
 
-[node name="Node2D" type="Node2D" unique_id=1792906484]
+[node name="Node2D" type="Node2D" unique_id=977684713]
 
-[node name="CharacterBody2D" parent="." unique_id=374827361 instance=ExtResource("1_r150o")]
-position = Vector2(754, 120)
+[node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("1_r150o")]
+position = Vector2(460, 246)
+acceleration = 10
+
+[node name="StaticBody2D" parent="." unique_id=917162587 instance=ExtResource("2_idj7w")]
+position = Vector2(0, 224)
