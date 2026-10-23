@@ -14,3 +14,4 @@ ehthumbs.db
 .idea/*
 !.idea/codeStyles
 !.idea/runConfigurations
+!.idea/vcs.xml
