@@ -45,9 +45,9 @@ func update_coyote_timer(delta: float) -> void:
 		coyote_timer -= delta
 
 func _on_cat_detection_hitbox_area_entered(area: Area2D) -> void:
-	if area.get_parent().has_method("get_crabbed"):
-		var crabbed = area.get_parent().get_crabbed()
-		if crabbed:
+	if area.get_parent().has_method("get_grabbed"):
+		var grabbed = area.get_parent().get_grabbed()
+		if grabbed:
 			print("Player grabbed the cat!")
 		
 		
