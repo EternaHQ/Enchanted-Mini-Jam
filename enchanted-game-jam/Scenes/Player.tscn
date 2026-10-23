@@ -58,6 +58,7 @@ radius = 58.5235
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=53931604]
 script = ExtResource("1_kyqiw")
+max_jump_height = 128.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=25744108]
 position = Vector2(0, -76)
