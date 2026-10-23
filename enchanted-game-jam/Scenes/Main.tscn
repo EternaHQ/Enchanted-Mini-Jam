@@ -7,7 +7,8 @@
 
 [node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("1_r150o")]
 position = Vector2(460, 246)
-acceleration = 10
+acceleration = 156
+gravity = 1578
 
 [node name="StaticBody2D" parent="." unique_id=917162587 instance=ExtResource("2_idj7w")]
 position = Vector2(0, 224)
