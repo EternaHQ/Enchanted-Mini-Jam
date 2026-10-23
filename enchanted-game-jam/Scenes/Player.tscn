@@ -56,6 +56,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bhhdu"]
 radius = 58.5235
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xcsw"]
+radius = 67.02985
+
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=53931604]
 script = ExtResource("1_kyqiw")
 max_jump_height = 128.0
@@ -63,7 +66,16 @@ max_jump_height = 128.0
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=25744108]
 position = Vector2(0, -76)
 sprite_frames = SubResource("SpriteFrames_dy8oy")
-frame_progress = 0.87360084
+autoplay = "default"
+frame_progress = 0.31440547
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400491238]
 shape = SubResource("CircleShape2D_bhhdu")
+
+[node name="CatDetectionHitbox" type="Area2D" parent="." unique_id=1060415202]
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CatDetectionHitbox" unique_id=1208701516]
+shape = SubResource("CircleShape2D_0xcsw")
+
+[connection signal="area_entered" from="CatDetectionHitbox" to="." method="_on_cat_detection_hitbox_area_entered"]
