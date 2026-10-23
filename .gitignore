@@ -15,3 +15,6 @@ ehthumbs.db
 !.idea/codeStyles
 !.idea/runConfigurations
 !.idea/vcs.xml
+
+# Local AI tool config (e.g. MCP)
+.ai/
