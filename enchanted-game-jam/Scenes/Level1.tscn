@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://Scenes/cauldron.tscn" id="3_ysn8j"]
 [ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://Scenes/Player.tscn" id="4_6ll4n"]
 [ext_resource type="PackedScene" uid="uid://8j1l6o7sn5fl" path="res://Scenes/test_boden.tscn" id="5_kylad"]
+[ext_resource type="PackedScene" uid="uid://02uhi7ydj00u" path="res://Chest.tscn" id="6_t3or0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mc20k"]
 texture = ExtResource("1_slnnj")
@@ -1302,12 +1303,12 @@ tile_set = SubResource("TileSet_kpr0l")
 position = Vector2(179, -191)
 
 [node name="Cauldron" parent="." unique_id=375950219 instance=ExtResource("3_ysn8j")]
-position = Vector2(857, -163.00002)
-scale = Vector2(0.455, 0.455)
+position = Vector2(883, -246)
 
 [node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("4_6ll4n")]
 position = Vector2(465, -210)
 scale = Vector2(2, 2)
+max_jump_height = 4096.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1269259616]
 position = Vector2(-467, 210)
@@ -1315,3 +1316,6 @@ zoom = Vector2(0.5, 0.5)
 
 [node name="StaticBody2D2" parent="." unique_id=917162587 instance=ExtResource("5_kylad")]
 position = Vector2(86, -131)
+
+[node name="RigidBody2D" parent="." unique_id=1527802656 instance=ExtResource("6_t3or0")]
+position = Vector2(179, -653)

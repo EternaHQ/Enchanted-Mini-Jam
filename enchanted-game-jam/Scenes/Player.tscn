@@ -51,6 +51,11 @@ animations = [{
 "loop": 1,
 "name": &"default",
 "speed": 4.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"jump",
+"speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bhhdu"]
@@ -61,13 +66,14 @@ radius = 67.02985
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=53931604]
 script = ExtResource("1_kyqiw")
+jump_speed = 1000
 max_jump_height = 128.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=25744108]
 position = Vector2(0, -76)
 sprite_frames = SubResource("SpriteFrames_dy8oy")
+animation = &"jump"
 autoplay = "default"
-frame_progress = 0.31440547
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400491238]
 shape = SubResource("CircleShape2D_bhhdu")

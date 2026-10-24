@@ -2,14 +2,14 @@ extends CharacterBody2D
 
 @export var speed: int = 300
 @export var acceleration: int = 10
-@export var jump_speed: int = 600
+@export var jump_speed: int = 900
 @export var gravity: int = 1500
 @export var coyote_time: float = 0.08
-@export var max_jump_height: float = 1024.0 
+@export var max_jump_height: float = 4069.0 
 @export var throw_force: float = 400
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-const PUSH_FORCE: float= 70.0
+const PUSH_FORCE: float= 100.0
 const MIN_PUSH_FORCE: float= 13
 
 # Variable für Coyote Time
