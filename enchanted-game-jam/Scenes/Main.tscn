@@ -21,4 +21,6 @@ zoom = Vector2(0.2, 0.2)
 [node name="Cat" parent="." unique_id=1068891402 instance=ExtResource("3_kln2b")]
 position = Vector2(1150, 271)
 
-[node name="StaticBody2D2" parent="." unique_id=375950219 instance=ExtResource("4_rgh2o")]
+[node name="Cauldron" parent="." unique_id=375950219 instance=ExtResource("4_rgh2o")]
+z_index = 1
+position = Vector2(0, 256)

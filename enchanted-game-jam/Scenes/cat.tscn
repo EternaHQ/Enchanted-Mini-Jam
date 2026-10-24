@@ -134,6 +134,7 @@ autoplay = "walk"
 
 [node name="GrabArea2D" type="Area2D" parent="." unique_id=1614956506]
 collision_layer = 16
+collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GrabArea2D" unique_id=1421142845]
 rotation = 1.5707964
