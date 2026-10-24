@@ -2591,7 +2591,7 @@ scale = Vector2(2, 2)
 max_jump_height = 4096.0
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1269259616]
-position = Vector2(-467, 210)
+position = Vector2(-6, 5)
 zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 

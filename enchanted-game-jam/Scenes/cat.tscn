@@ -139,3 +139,9 @@ collision_mask = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GrabArea2D" unique_id=1421142845]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_ql73s")
+
+[node name="Timer" type="Timer" parent="." unique_id=484811878]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
