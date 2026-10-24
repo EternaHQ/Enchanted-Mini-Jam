@@ -48,6 +48,12 @@ throw={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Floor"
+2d_physics/layer_2="Cat"
+2d_physics/layer_3="Player"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

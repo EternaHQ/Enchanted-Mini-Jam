@@ -56,10 +56,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bhhdu"]
 radius = 58.5235
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_0xcsw"]
-radius = 67.02985
-
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=53931604]
+collision_layer = 4
 script = ExtResource("1_kyqiw")
 jump_speed = 1000
 max_jump_height = 128.0
@@ -72,11 +70,3 @@ frame_progress = 0.43468136
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400491238]
 shape = SubResource("CircleShape2D_bhhdu")
-
-[node name="CatDetectionHitbox" type="Area2D" parent="." unique_id=1060415202]
-collision_mask = 16
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CatDetectionHitbox" unique_id=1208701516]
-shape = SubResource("CircleShape2D_0xcsw")
-
-[connection signal="area_entered" from="CatDetectionHitbox" to="." method="_on_cat_detection_hitbox_area_entered"]

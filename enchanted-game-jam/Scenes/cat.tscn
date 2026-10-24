@@ -133,15 +133,11 @@ animation = &"grabbed"
 autoplay = "walk"
 
 [node name="GrabArea2D" type="Area2D" parent="." unique_id=1614956506]
-collision_layer = 16
-collision_mask = 16
+collision_layer = 2
+collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GrabArea2D" unique_id=1421142845]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_ql73s")
 
-[node name="Timer" type="Timer" parent="." unique_id=484811878]
-wait_time = 5.0
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="GrabArea2D" to="." method="_on_grab_area_2d_body_entered"]

@@ -114,13 +114,6 @@ func update_animations() -> void:
 			if animated_sprite.sprite_frames.has_animation("idle"):
 				animated_sprite.play("idle")
 
-#leos code
-func _on_cat_detection_hitbox_area_entered(area: Area2D) -> void:
-	if area.get_parent().has_method("get_grabbed"):
-		var grabbed = area.get_parent().get_grabbed()
-		if grabbed:
-			print("Player grabbed the cat!")
-
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("throw") and has_node("Cat"):
 		throw_cat()		
