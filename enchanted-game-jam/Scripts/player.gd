@@ -119,16 +119,7 @@ func _input(event: InputEvent) -> void:
 		throw_cat()		
 		
 func throw_cat() -> void:
-	var cat = get_node("Cat")
-	if cat:
-		cat.reparent(get_parent())
-	var throw_direction = Vector2.RIGHT
-	if animated_sprite.flip_h:
-		throw_direction = Vector2.LEFT
-	throw_direction.y = -0.5  # Leichter Aufwärtswinkel beim Werfen
-	if cat.has_method("launch"):
-		cat.launch(throw_direction * throw_force)
-		print("player throwed cat")
+	get_node("Cat").throw
 
 
 func push()-> void:

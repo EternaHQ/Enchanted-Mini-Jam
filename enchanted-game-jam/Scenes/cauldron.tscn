@@ -64,6 +64,6 @@ autoplay = "default"
 frame_progress = 0.8060566
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=482137628]
-polygon = PackedVector2Array(192, 25, 211, 109, 144, 205, 9, 236, -149, 207, -209, 123, -196, 25, -153, -71, -171, 130, -127, 183, -7, 205, 116, 177, 169, 122, 152, -78)
+polygon = PackedVector2Array(192, 25, 211, 109, 144, 205, 9, 236, -149, 207, -209, 123, -196, 25, -155, -41, -171, 130, -127, 183, -7, 205, 116, 177, 169, 122, 158, -40)
 
 [connection signal="area_entered" from="Area_top" to="." method="_on_area_top_area_entered"]
