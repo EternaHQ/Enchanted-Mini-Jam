@@ -23,29 +23,12 @@ func _physics_process(delta: float) -> void:
 		velocity = (player.global_position + Vector2(0,-100) - global_position) * 10
 		move_and_slide()
 	else:
+		movement()
 		if !is_on_floor():
 			velocity.y += gravity
 		if is_on_floor():
 			velocity.y = 0
 		move_and_slide()
-	
-	
-	
-	
-
-func launch(init_velocity: Vector2) -> void:
-	is_flying = true
-	velocity = init_velocity
-	await get_tree().create_timer(0.5).timeout
-	collision_shape.set_deferred("disabled", false)
-	grab_area.set_deferred("monitorable", true)
-
-func landed() -> void:
-	is_running=true
-	animated_sprite.play("walk")
-
-func movement():
-	pass
 
 func _on_grab_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
@@ -53,4 +36,11 @@ func _on_grab_area_2d_body_entered(body: Node2D) -> void:
 		is_grabbed = true
 		animated_sprite.play("grabbed")
 		collision_shape.disabled = false
-		grab_area.monitorable = true
+		collision_shape.set_deferred("disabled", true)
+		grab_area.set_deferred("monitorable", true)  
+
+func movement() -> void:
+	pass
+
+func throw() -> void:
+	pass
