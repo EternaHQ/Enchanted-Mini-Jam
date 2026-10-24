@@ -6,17 +6,21 @@ extends CharacterBody2D
 @export var gravity: int = 1500
 @export var coyote_time: float = 0.08
 @export var max_jump_height: float = 256.0
+@export	var throw_force: float = 400
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
 
 var coyote_timer: float = 0.0
 var jump_start_y: float = 0.0
 var is_jumping: bool = false
+func _ready() -> void:
+	add_to_group("player")
 
 func _physics_process(delta: float) -> void:
 	update_coyote_timer(delta)
 	handle_input()
 	velocity.y += gravity * delta
 	move_and_slide()
-
 func handle_input() -> void:
 	# Sprung starten (am Boden oder kurz nach dem Verlassen der Kante)
 	if Input.is_action_just_pressed("Up") and coyote_timer > 0.0:
@@ -37,9 +41,34 @@ func handle_input() -> void:
 		velocity.x = move_toward(velocity.x, 0, acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, speed * direction, acceleration)
+		if direction < 0:
+			animated_sprite.flip_h = true
+		else:
+			animated_sprite.flip_h = false
 
 func update_coyote_timer(delta: float) -> void:
 	if is_on_floor() and not is_jumping:
 		coyote_timer = coyote_time
 	else:
 		coyote_timer -= delta
+
+func _on_cat_detection_hitbox_area_entered(area: Area2D) -> void:
+	if area.get_parent().has_method("get_grabbed"):
+		var grabbed = area.get_parent().get_grabbed()
+		if grabbed:
+			print("Player grabbed the cat!")
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("throw") and has_node("Cat"):
+		throw_cat()		
+		
+func throw_cat() -> void:
+	var cat = get_node("Cat")
+	if cat:
+		cat.reparent(get_parent())
+	var throw_direction = Vector2.RIGHT
+	if animated_sprite.flip_h:
+		throw_direction = Vector2.LEFT
+	throw_direction.y = -0.5  # Add a slight upward angle to the throw
+	if cat.has_method("launch"):
+		cat.launch(throw_direction * throw_force)
