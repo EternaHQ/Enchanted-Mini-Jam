@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://bh65c7ue06ckp"]
 
 [ext_resource type="Texture2D" uid="uid://cr24vcydkfqhv" path="res://Assets/Sprites/IMG_0263.PNG" id="1_0t22i"]
-[ext_resource type="Script" uid="uid://c67x3ly6tijlm" path="res://cauldron.gd" id="2_q3ljf"]
+[ext_resource type="Script" uid="uid://c67x3ly6tijlm" path="res://Scripts/cauldron.gd" id="2_q3ljf"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4plfi"]
 radius = 165.0
 height = 388.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b37d6"]
-radius = 231.0
-height = 624.0
+radius = 27.0
+height = 338.0
 
 [node name="StaticBody2D" type="StaticBody2D" unique_id=375950219]
 
@@ -21,11 +21,12 @@ position = Vector2(0, 61)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_4plfi")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=2028879698]
+[node name="Area_top" type="Area2D" parent="." unique_id=2028879698]
 script = ExtResource("2_q3ljf")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1797421755]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_top" unique_id=1797421755]
+position = Vector2(0, -71)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area_top" to="Area_top" method="_on_body_entered"]

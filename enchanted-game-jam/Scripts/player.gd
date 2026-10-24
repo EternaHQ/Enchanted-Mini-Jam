@@ -9,7 +9,7 @@ extends CharacterBody2D
 @export	var throw_force: float = 400
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-
+#philipps code
 var coyote_timer: float = 0.0
 var jump_start_y: float = 0.0
 var is_jumping: bool = false
@@ -22,13 +22,13 @@ func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
 	move_and_slide()
 func handle_input() -> void:
-	# Sprung starten (am Boden oder kurz nach dem Verlassen der Kante)
+	
 	if Input.is_action_just_pressed("Up") and coyote_timer > 0.0:
 		is_jumping = true
 		jump_start_y = global_position.y
 		coyote_timer = 0.0
 
-	# Aufwärtsbewegung, solange Taste gehalten und Maximalhöhe nicht erreicht
+	
 	if is_jumping:
 		var height := jump_start_y - global_position.y
 		if Input.is_action_pressed("Up") and height < max_jump_height and not is_on_ceiling():
@@ -51,7 +51,7 @@ func update_coyote_timer(delta: float) -> void:
 		coyote_timer = coyote_time
 	else:
 		coyote_timer -= delta
-
+#leos code
 func _on_cat_detection_hitbox_area_entered(area: Area2D) -> void:
 	if area.get_parent().has_method("get_grabbed"):
 		var grabbed = area.get_parent().get_grabbed()
