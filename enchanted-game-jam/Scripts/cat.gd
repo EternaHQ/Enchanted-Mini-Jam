@@ -42,7 +42,6 @@ func _physics_process(delta: float) -> void:
 
 func _on_grab_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		print("test")
 		is_grabbed = true
 		animated_sprite.play("grabbed")
 		collision_shape.set_deferred("disabled", true)
