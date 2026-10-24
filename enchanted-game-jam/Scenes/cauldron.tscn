@@ -51,8 +51,8 @@ animations = [{
 script = ExtResource("1_2rulr")
 
 [node name="Area_top" type="Area2D" parent="." unique_id=2028879698]
-collision_layer = 16
-collision_mask = 16
+collision_layer = 18
+collision_mask = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_top" unique_id=1797421755]
 position = Vector2(-5, 162)
@@ -60,10 +60,12 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
 [node name="back_sprite" type="Sprite2D" parent="." unique_id=1457933939]
+visible = false
 position = Vector2(0, -24)
 texture = ExtResource("2_oiwvb")
 
 [node name="front_sprite" type="AnimatedSprite2D" parent="." unique_id=655461960]
+visible = false
 z_index = 2
 sprite_frames = SubResource("SpriteFrames_ql73s")
 autoplay = "default"
