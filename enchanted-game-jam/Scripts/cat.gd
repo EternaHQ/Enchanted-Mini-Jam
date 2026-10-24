@@ -11,6 +11,7 @@ var gravity: float = 500.0
 var speed: int=10
 var acceleration=100
 var movement_direction=0
+var is_grabbed: bool=false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,6 +22,7 @@ func _physics_process(delta: float) -> void:
 	if is_running:
 		velocity.x+=movement_direction*speed
 		move_and_slide()
+	
 	if is_flying:
 		velocity.y += gravity * delta
 		move_and_slide()
@@ -28,11 +30,14 @@ func _physics_process(delta: float) -> void:
 			is_flying = false
 			velocity = Vector2.ZERO
 			landed()
-
+			
+	if not is_on_floor() and !is_grabbed :
+		velocity.y += gravity * delta
 
 func get_grabbed() -> bool:
 	
 	is_running = false
+	is_grabbed=true
 	animated_sprite.play("grabbed")
 	collision_shape.set_deferred("disabled", true)
 	grab_area.set_deferred("monitorable", false)
