@@ -47,7 +47,7 @@ func handle_input() -> void:
 	# Normaler, sauberer Godot-Sprungimpuls
 	if Input.is_action_just_pressed("Up") and coyote_timer > 0.0:
 		velocity.y = -jump_speed
-		coyote_timer = 0.0 # Timer direkt verbrauchen
+		coyote_timer = 0.0 
 
 	# Variabler Sprung: Wenn man die Taste loslässt, bricht der Sprung ab (fühlt sich besser an)
 	if Input.is_action_just_released("Up") and velocity.y < 0:
@@ -98,6 +98,6 @@ func push()-> void:
 	for i in get_slide_collision_count():
 		var collisions= get_slide_collision(i)
 		if collisions.get_collider() is RigidBody2D:
-			var push_force = (PUSH_FORCE* velocity.length()/speed) * MIN_PUSH_FORCE
+			var push_force = (PUSH_FORCE* velocity.length()/speed) + MIN_PUSH_FORCE
 			collisions.get_collider().apply_central_impulse(-collisions.get_normal()*PUSH_FORCE)
 		
