@@ -72,3 +72,4 @@ func throw_cat() -> void:
 	throw_direction.y = -0.5  # Add a slight upward angle to the throw
 	if cat.has_method("launch"):
 		cat.launch(throw_direction * throw_force)
+		print("player throwed cat")
