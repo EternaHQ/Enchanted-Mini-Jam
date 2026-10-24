@@ -2583,6 +2583,7 @@ tile_set = SubResource("TileSet_kpr0l")
 position = Vector2(179, -191)
 
 [node name="Cauldron" parent="." unique_id=375950219 instance=ExtResource("3_ysn8j")]
+z_index = -1
 position = Vector2(1726, -216)
 
 [node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("4_6ll4n")]
