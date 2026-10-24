@@ -19,9 +19,7 @@ func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
 
 func _physics_process(delta: float) -> void:
-	if is_running:
-		velocity.x+=movement_direction*speed
-		move_and_slide()
+	
 	
 	if is_flying:
 		velocity.y += gravity * delta
@@ -33,7 +31,9 @@ func _physics_process(delta: float) -> void:
 			
 	if not is_on_floor() and !is_grabbed :
 		velocity.y += gravity * delta
-
+		
+	
+	random_movement()
 func get_grabbed() -> bool:
 	
 	is_running = false
@@ -60,7 +60,17 @@ func landed() -> void:
 	is_running=true
 	animated_sprite.play("walk")
 
-
-func _on_timer_timeout() -> void:
-	movement_direction=randf_range(-1,1)
-	print(movement_direction)
+func random_movement():
+	if player == null:
+		player = get_tree().get_first_node_in_group("player")
+		if player == null:
+			return
+	if global_position.x>player.global_position.x:
+		movement_direction= 1
+		animated_sprite.flip_h=false
+	elif global_position.x < player.global_position.x:
+		movement_direction=-1
+		animated_sprite.flip_h=true
+	if is_running:
+		velocity.x+=movement_direction*speed
+	move_and_slide()

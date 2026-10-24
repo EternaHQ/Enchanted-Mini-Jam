@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://drfvjdim7bgvb" path="res://Assets/PNGSet/PNG_0008.png" id="9_hckop"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b37d6"]
-radius = 48.0
-height = 372.0
+radius = 44.0
+height = 290.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ql73s"]
 animations = [{
@@ -54,7 +54,7 @@ collision_layer = 16
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_top" unique_id=1797421755]
-position = Vector2(0, 131)
+position = Vector2(-5, 162)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
