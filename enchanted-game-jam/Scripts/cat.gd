@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var grab_area = $GrabArea2D
 var is_flying: bool = false
 var player: CharacterBody2D
-var gravity: float = 800.0
+var gravity: float = 500.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	await get_tree().process_frame
@@ -13,12 +13,11 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if is_flying:
 		velocity.y += gravity * delta
-		position += velocity * delta
 		move_and_slide()
-		if position.y >= 0:
+		if is_on_floor():
 			is_flying = false
 			velocity = Vector2.ZERO
-			position.y = 0
+			landed()
 
 
 func get_grabbed() -> bool:
@@ -34,5 +33,9 @@ func _finalize_grab() -> void:
 func launch(init_velocity: Vector2) -> void:
 	is_flying = true
 	velocity = init_velocity
+	await get_tree().create_timer(0.5).timeout
 	collision_shape.set_deferred("disabled", false)
 	grab_area.set_deferred("monitorable", true)
+
+func landed() -> void:
+	animated_sprite.play("walk")

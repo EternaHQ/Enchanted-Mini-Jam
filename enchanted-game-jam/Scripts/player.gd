@@ -41,6 +41,10 @@ func handle_input() -> void:
 		velocity.x = move_toward(velocity.x, 0, acceleration)
 	else:
 		velocity.x = move_toward(velocity.x, speed * direction, acceleration)
+		if direction < 0:
+			animated_sprite.flip_h = true
+		else:
+			animated_sprite.flip_h = false
 
 func update_coyote_timer(delta: float) -> void:
 	if is_on_floor() and not is_jumping:
