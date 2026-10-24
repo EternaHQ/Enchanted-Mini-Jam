@@ -14,8 +14,8 @@ gravity = 1578
 [node name="StaticBody2D" parent="." unique_id=917162587 instance=ExtResource("2_idj7w")]
 position = Vector2(0, 224)
 
-[node name="CharacterBody2D2" parent="." unique_id=1068891402 instance=ExtResource("3_kln2b")]
-position = Vector2(1203, 253)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=656413985]
 zoom = Vector2(0.2, 0.2)
+
+[node name="Cat" parent="." unique_id=1068891402 instance=ExtResource("3_kln2b")]
+position = Vector2(1150, 271)

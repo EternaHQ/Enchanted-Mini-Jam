@@ -6,6 +6,9 @@ extends CharacterBody2D
 @export var gravity: int = 1500
 @export var coyote_time: float = 0.08
 @export var max_jump_height: float = 256.0
+@export	var throw_force: float = 400
+@onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
 
 var coyote_timer: float = 0.0
 var jump_start_y: float = 0.0
@@ -50,5 +53,18 @@ func _on_cat_detection_hitbox_area_entered(area: Area2D) -> void:
 		var grabbed = area.get_parent().get_grabbed()
 		if grabbed:
 			print("Player grabbed the cat!")
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("throw") and has_node("Cat"):
+		throw_cat()		
 		
-		
+func throw_cat() -> void:
+	var cat = get_node("Cat")
+	if cat:
+		cat.reparent(get_parent())
+	var throw_direction = Vector2.RIGHT
+	if animated_sprite.flip_h:
+		throw_direction = Vector2.LEFT
+	throw_direction.y = -0.5  # Add a slight upward angle to the throw
+	if cat.has_method("launch"):
+		cat.launch(throw_direction * throw_force)

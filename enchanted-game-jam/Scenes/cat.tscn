@@ -120,7 +120,7 @@ animations = [{
 radius = 64.0
 height = 236.0
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1068891402]
+[node name="Cat" type="CharacterBody2D" unique_id=1068891402]
 script = ExtResource("1_23j0x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1758542993]
@@ -132,9 +132,9 @@ sprite_frames = SubResource("SpriteFrames_ql73s")
 animation = &"grabbed"
 autoplay = "walk"
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1614956506]
+[node name="GrabArea2D" type="Area2D" parent="." unique_id=1614956506]
 collision_layer = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1421142845]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GrabArea2D" unique_id=1421142845]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_ql73s")
