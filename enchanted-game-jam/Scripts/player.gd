@@ -19,6 +19,7 @@ var war_vorher_auf_boden: bool = true # Wichtig, um den Lande-Moment zu erkennen
 
 func _ready() -> void:
 	add_to_group("player")
+	platform_on_leave = CharacterBody2D.PLATFORM_ON_LEAVE_DO_NOTHING
 
 func _physics_process(delta: float) -> void:
 	# 1. Schwerkraft zuerst anwenden (wenn nicht auf dem Boden)

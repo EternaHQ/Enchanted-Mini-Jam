@@ -68,7 +68,7 @@ max_jump_height = 128.0
 position = Vector2(0, -76)
 sprite_frames = SubResource("SpriteFrames_dy8oy")
 autoplay = "default"
-frame_progress = 0.113274544
+frame_progress = 0.43468136
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400491238]
 shape = SubResource("CircleShape2D_bhhdu")
