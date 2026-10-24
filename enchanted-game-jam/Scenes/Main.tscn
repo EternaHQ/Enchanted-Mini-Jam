@@ -1,26 +1,30 @@
 [gd_scene format=3 uid="uid://ck0fxugrbtgja"]
 
-[ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://Scenes/Player.tscn" id="1_r150o"]
-[ext_resource type="PackedScene" uid="uid://8j1l6o7sn5fl" path="res://Scenes/test_boden.tscn" id="2_idj7w"]
-[ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://Scenes/cat.tscn" id="3_kln2b"]
-[ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://Scenes/cauldron.tscn" id="4_rgh2o"]
+[ext_resource type="Texture2D" uid="uid://c3tu70ov4aaln" path="res://Assets/Placeholder.jpeg" id="1_r150o"]
+[ext_resource type="Script" uid="uid://dkhwfabg71j36" path="res://Scenes/button.gd" id="2_idj7w"]
 
-[node name="Node2D" type="Node2D" unique_id=977684713]
+[node name="Control" type="Control" unique_id=1320536645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("1_r150o")]
-position = Vector2(460, 246)
-acceleration = 156
-gravity = 1578
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1886078025]
+layout_mode = 0
+offset_right = 1163.0
+offset_bottom = 649.0
+texture = ExtResource("1_r150o")
 
-[node name="StaticBody2D" parent="." unique_id=917162587 instance=ExtResource("2_idj7w")]
-position = Vector2(0, 224)
+[node name="Button" type="Button" parent="." unique_id=1740805403]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 250.0
+offset_right = 596.0
+offset_bottom = 281.0
+scale = Vector2(2, 2)
+text = "Start Game"
+script = ExtResource("2_idj7w")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=656413985]
-zoom = Vector2(0.2, 0.2)
-
-[node name="Cat" parent="." unique_id=1068891402 instance=ExtResource("3_kln2b")]
-position = Vector2(1150, 271)
-
-[node name="Cauldron" parent="." unique_id=375950219 instance=ExtResource("4_rgh2o")]
-z_index = 1
-position = Vector2(0, 256)
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

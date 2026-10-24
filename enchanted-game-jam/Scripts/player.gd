@@ -9,6 +9,9 @@ extends CharacterBody2D
 @export var throw_force: float = 400
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+const PUSH_FORCE: float= 70.0
+const MIN_PUSH_FORCE: float= 13
+
 # Variable für Coyote Time
 var coyote_timer: float = 0.0
 var wirklich_auf_boden: bool = false
@@ -20,16 +23,12 @@ func _physics_process(delta: float) -> void:
 	# 1. Schwerkraft zuerst anwenden (wenn nicht auf dem Boden)
 	if not wirklich_auf_boden:
 		velocity.y += gravity * delta
-		
-	# 2. Input & Bewegung verarbeiten
+
 	handle_input()
-	
-	# 3. Bewegung ausführen
 	move_and_slide()
-	
-	# 4. Boden prüfen und Timer updaten
 	pruefe_echten_boden()
 	update_coyote_timer(delta)
+	push()
 
 func pruefe_echten_boden() -> void:
 	wirklich_auf_boden = is_on_floor()
@@ -93,3 +92,12 @@ func throw_cat() -> void:
 	if cat.has_method("launch"):
 		cat.launch(throw_direction * throw_force)
 		print("player throwed cat")
+
+
+func push()-> void:
+	for i in get_slide_collision_count():
+		var collisions= get_slide_collision(i)
+		if collisions.get_collider() is RigidBody2D:
+			var push_force = (PUSH_FORCE* velocity.length()/speed) * MIN_PUSH_FORCE
+			collisions.get_collider().apply_central_impulse(-collisions.get_normal()*PUSH_FORCE)
+		
