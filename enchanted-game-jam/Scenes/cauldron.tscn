@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bh65c7ue06ckp"]
 
 [ext_resource type="Script" uid="uid://bdxgdnjj23cmd" path="res://Scenes/cauldron.gd" id="1_2rulr"]
+[ext_resource type="Texture2D" uid="uid://c3w8rk0pbmt24" path="res://Assets/signal-2026-10-25-01-20-55-251_002.png" id="2_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://r88upr0tjmrp" path="res://Assets/PNGSet/PNG_0001.png" id="2_v2jri"]
 [ext_resource type="Texture2D" uid="uid://cuu3y836b8r8r" path="res://Assets/PNGSet/PNG_0002.png" id="3_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://ykcfrxeuc8kv" path="res://Assets/PNGSet/PNG_0003.png" id="4_uhwwe"]
@@ -58,10 +59,14 @@ position = Vector2(-5, 162)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=655461960]
+[node name="back_sprite" type="Sprite2D" parent="." unique_id=1457933939]
+position = Vector2(0, -24)
+texture = ExtResource("2_oiwvb")
+
+[node name="front_sprite" type="AnimatedSprite2D" parent="." unique_id=655461960]
+z_index = 2
 sprite_frames = SubResource("SpriteFrames_ql73s")
 autoplay = "default"
-frame_progress = 0.8060566
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=482137628]
 polygon = PackedVector2Array(192, 25, 211, 109, 144, 205, 9, 236, -149, 207, -209, 123, -196, 25, -155, -41, -171, 130, -127, 183, -7, 205, 116, 177, 169, 122, 158, -40)
