@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://ck0fxugrbtgja"]
 
-[ext_resource type="Script" uid="uid://dkhwfabg71j36" path="res://Scenes/button.gd" id="2_idj7w"]
+[ext_resource type="Texture2D" uid="uid://biexhibfbpq0h" path="res://Assets/Button/PNG_0001.png" id="1_7sj7i"]
+[ext_resource type="Texture2D" uid="uid://bbfwt4o6ge0rn" path="res://Assets/Button/PNG_0002.png" id="2_ep8v8"]
 [ext_resource type="Texture2D" uid="uid://b113uar7p4edh" path="res://Assets/titlescreen sheet/PNG_0001.png" id="2_lfh1j"]
 [ext_resource type="Texture2D" uid="uid://co1cf80n201m2" path="res://Assets/titlescreen sheet/PNG_0002.png" id="3_7sj7i"]
+[ext_resource type="Texture2D" uid="uid://beeywmiywklvn" path="res://Assets/Button/PNG_0003.png" id="3_3133c"]
+[ext_resource type="Script" uid="uid://7n3n1i8p16di" path="res://Scripts/texture_button.gd" id="4_ep8v8"]
+[ext_resource type="FontFile" uid="uid://qb1gw4o02oah" path="res://Scenes/CatsAlphabet.ttf" id="4_pbw6q"]
 [ext_resource type="Texture2D" uid="uid://twxoo1j5dyin" path="res://Assets/titlescreen sheet/PNG_0003.png" id="4_semxg"]
+[ext_resource type="Script" uid="uid://df1x1b2mbfjmy" path="res://Scripts/texture_button_2.gd" id="5_3133c"]
 [ext_resource type="Texture2D" uid="uid://esd0q12ovdum" path="res://Assets/titlescreen sheet/PNG_0004.png" id="5_ep8v8"]
 [ext_resource type="Texture2D" uid="uid://dvnrfjyxsgdjh" path="res://Assets/titlescreen sheet/PNG_0005.png" id="6_3133c"]
 [ext_resource type="Texture2D" uid="uid://ch1lk5uuohejr" path="res://Assets/titlescreen sheet/PNG_0006.png" id="7_js5gh"]
@@ -49,7 +54,6 @@
 [ext_resource type="Texture2D" uid="uid://dp0664edrfx0f" path="res://Assets/titlescreen sheet/PNG_0046.png" id="47_e2umn"]
 [ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://Assets/titlescreen sheet/PNG_0047.png" id="48_k6daw"]
 [ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://Assets/titlescreen sheet/PNG_0048.png" id="49_05y1e"]
-[ext_resource type="FontFile" uid="uid://dxvepix0t1a60" path="res://Assets/Conthrax-SemiBold.otf" id="74_as1io"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_idj7w"]
 animations = [{
@@ -204,11 +208,19 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_kym2j"]
-font = ExtResource("74_as1io")
+font = ExtResource("4_pbw6q")
 font_size = 128
-font_color = Color(0.62296426, 0.57971734, 0.71606874, 1)
-outline_size = 8
-outline_color = Color(0.763404, 0.5344679, 0.88052005, 1)
+font_color = Color(1, 1, 0.35686275, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
+font = ExtResource("4_pbw6q")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oeq8l"]
+font = ExtResource("4_pbw6q")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
 
 [node name="Control" type="Control" unique_id=1320536645]
 layout_mode = 3
@@ -220,31 +232,67 @@ offset_bottom = -41.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="." unique_id=1740805403]
+[node name="TextureButton" type="TextureButton" parent="." unique_id=738948679]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 291.0
-offset_right = 129.0
-offset_bottom = 322.0
-scale = Vector2(2, 2)
-text = "Start Game"
-script = ExtResource("2_idj7w")
+offset_left = 31.0
+offset_top = 708.0
+offset_right = 287.0
+offset_bottom = 1092.0
+rotation = -1.5707964
+texture_normal = ExtResource("1_7sj7i")
+texture_pressed = ExtResource("3_3133c")
+texture_hover = ExtResource("2_ep8v8")
+script = ExtResource("4_ep8v8")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=1712063749]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 31.0
+offset_top = 916.0
+offset_right = 287.0
+offset_bottom = 1300.0
+rotation = -1.5707964
+texture_normal = ExtResource("1_7sj7i")
+texture_pressed = ExtResource("3_3133c")
+texture_hover = ExtResource("2_ep8v8")
+script = ExtResource("5_3133c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=323228528]
 z_index = -1
 position = Vector2(960.25, 511.75)
-scale = Vector2(0.9997395, 0.94861114)
 sprite_frames = SubResource("SpriteFrames_idj7w")
 autoplay = "default"
-frame_progress = 0.5733259
+frame_progress = 0.11958579
 
 [node name="Label" type="Label" parent="." unique_id=646088144]
+unique_name_in_owner = true
 layout_mode = 0
-offset_right = 1333.0
-offset_bottom = 473.0
-text = "Cook the 
+offset_left = 22.0
+offset_top = -6.0
+offset_right = 1355.0
+offset_bottom = 525.0
+text = "COOK THE
 
-    at"
+    AT"
 label_settings = SubResource("LabelSettings_kym2j")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[node name="Label2" type="Label" parent="." unique_id=1396648643]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 543.0
+offset_right = 340.0
+offset_bottom = 624.0
+text = "PLAY"
+label_settings = SubResource("LabelSettings_v0s4m")
+
+[node name="Label3" type="Label" parent="." unique_id=2031006171]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 751.0
+offset_right = 334.0
+offset_bottom = 832.0
+text = "QUIT"
+label_settings = SubResource("LabelSettings_oeq8l")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton2" to="TextureButton" method="_on_texture_button_2_pressed"]
