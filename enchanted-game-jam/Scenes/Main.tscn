@@ -262,7 +262,7 @@ z_index = -1
 position = Vector2(960.25, 511.75)
 sprite_frames = SubResource("SpriteFrames_idj7w")
 autoplay = "default"
-frame_progress = 0.9037905
+frame_progress = 0.7091345
 
 [node name="Label" type="Label" parent="." unique_id=646088144]
 unique_name_in_owner = true
