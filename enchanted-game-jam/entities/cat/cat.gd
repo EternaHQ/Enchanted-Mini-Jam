@@ -47,6 +47,7 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("throw"):
 		if is_grabbed == true:
+			Audio.get_node("throw").play()
 			start_still = false
 			is_grabbed = false
 			just_launched = true
@@ -54,17 +55,20 @@ func _physics_process(delta: float) -> void:
 			grab_area.set_deferred("monitorable", true)
 			velocity *= 4
 			await get_tree().create_timer(2).timeout
-			just_launched = false
-			animated_sprite.play("walk")
+			if !is_grabbed:
+				just_launched = false
+				animated_sprite.play("walk")
 
 	move_and_slide()
 
 func _on_grab_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
+		Audio.get_node("pick_up").play()
 		is_grabbed = true
 		animated_sprite.play("grabbed")
 		collision_shape.set_deferred("disabled", true)
 		grab_area.set_deferred("monitorable", false)
+	
 
 func change_movement() -> void:
 	if velocity.x > 0:
