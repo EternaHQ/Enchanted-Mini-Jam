@@ -171,4 +171,7 @@ text = "PRESS HERE TO
 PLAY AGAIN"
 label_settings = SubResource("LabelSettings_kpr0l")
 
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=616062920]
+color = Color(0.7046392, 0.7046392, 0.70463914, 1)
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
