@@ -1,6 +1,4 @@
 extends Control
-@onready var label_2: Label = $"../Label2"
-@onready var label_3: Label = $"../Label3"
 
 
 # Called when the node enters the scene tree for the first time.
