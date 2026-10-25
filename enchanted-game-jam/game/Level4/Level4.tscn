@@ -2612,3 +2612,6 @@ Klappe = NodePath("../Level4_Klappe")
 visible = false
 
 [node name="Level4_Klappe" parent="." unique_id=1663043384 instance=ExtResource("8_w25gh")]
+
+[connection signal="press" from="pressure_plate" to="Level4_Klappe" method="_on_pressure_plate_press"]
+[connection signal="unpress" from="pressure_plate" to="Level4_Klappe" method="_on_pressure_plate_unpress"]
