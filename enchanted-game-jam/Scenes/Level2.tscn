@@ -2575,7 +2575,7 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 4
 sources/0 = SubResource("TileSetAtlasSource_q6r6c")
 
-[node name="Node2D" type="Node2D" unique_id=1130212155]
+[node name="Node2D2" type="Node2D" unique_id=1130212155]
 
 [node name="CharacterBody2D" parent="." unique_id=53931604 instance=ExtResource("1_q6r6c")]
 position = Vector2(-236, -37)

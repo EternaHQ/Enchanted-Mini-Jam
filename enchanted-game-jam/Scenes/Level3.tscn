@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="5_u5lf4"]
 [ext_resource type="PackedScene" uid="uid://ioa3nbtu13r4" path="res://Moving_platform.tscn" id="6_084pi"]
 [ext_resource type="PackedScene" uid="uid://dlr2bc1iwol5v" path="res://Pressure_plate.tscn" id="7_43mlh"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://Scenes/parallax_manager.tscn" id="8_cp0jt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("5_u5lf4")
@@ -2608,3 +2609,5 @@ position = Vector2(869, 16)
 [node name="pressure_plate" parent="." unique_id=163490274 node_paths=PackedStringArray("moving_platform") instance=ExtResource("7_43mlh")]
 position = Vector2(-51, -62)
 moving_platform = NodePath("../moving_platform")
+
+[node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("8_cp0jt")]
