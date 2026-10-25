@@ -53,7 +53,6 @@
 [ext_resource type="Texture2D" uid="uid://dp0664edrfx0f" path="res://game/menu/background/PNG_0046.png" id="47_e2umn"]
 [ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://game/menu/background/PNG_0047.png" id="48_k6daw"]
 [ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://game/menu/background/PNG_0048.png" id="49_05y1e"]
-[ext_resource type="Script" uid="uid://b0xosid8rmk1j" path="res://game/menu/instruction.gd" id="54_chqs2"]
 [ext_resource type="Script" uid="uid://qthjwhtf34vn" path="res://game/menu/level_jump.gd" id="55_ox5jd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
@@ -223,6 +222,20 @@ font = ExtResource("4_pbw6q")
 font_size = 128
 font_color = Color(1, 1, 0.35686275, 1)
 
+[sub_resource type="GDScript" id="GDScript_ox5jd"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
 [sub_resource type="LabelSettings" id="LabelSettings_dy8oy"]
 font_size = 49
 font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
@@ -265,6 +278,37 @@ grow_vertical = 2
 offset_transform_enabled = true
 offset_transform_rotation = 1.5707964
 text = "PLAY"
+label_settings = SubResource("LabelSettings_v0s4m")
+
+[node name="EndlessButton" type="TextureButton" parent="." unique_id=190590694]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 708.0
+offset_right = 706.0
+offset_bottom = 1092.0
+rotation = -1.5766841
+texture_normal = ExtResource("1_7sj7i")
+texture_pressed = ExtResource("3_3133c")
+texture_hover = ExtResource("2_ep8v8")
+
+[node name="Label" type="Label" parent="EndlessButton" unique_id=205169501]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = -40.5
+offset_right = 113.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0006564972
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.9, 1)
+offset_transform_rotation = 1.5707964
+text = "ENDLESS"
 label_settings = SubResource("LabelSettings_v0s4m")
 
 [node name="QuitButton" type="TextureButton" parent="." unique_id=1712063749]
@@ -326,7 +370,7 @@ rotation = 4.712389
 texture_normal = ExtResource("1_7sj7i")
 texture_pressed = ExtResource("3_3133c")
 texture_hover = ExtResource("2_ep8v8")
-script = ExtResource("54_chqs2")
+script = SubResource("GDScript_ox5jd")
 
 [node name="Label" type="Label" parent="Instruction" unique_id=984323965]
 layout_mode = 0
@@ -349,9 +393,11 @@ offset_left = 1721.0
 offset_top = 28.0
 offset_right = 1721.568
 offset_bottom = 27.543999
+placeholder_text = "Lvl"
 script = ExtResource("55_ox5jd")
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="EndlessButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]
 [connection signal="text_submitted" from="LineEdit" to="LineEdit" method="_on_text_submitted"]

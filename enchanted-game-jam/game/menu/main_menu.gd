@@ -1,29 +1,19 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
 func _on_play_button_pressed() -> void:
-		await get_tree().create_timer(0.1).timeout
-		get_tree().change_scene_to_file("res://game/level_1/Level1.tscn")
+	Audio.get_node("klick_sound").play()
+	get_tree().change_scene_to_file("res://game/level_1/Level1.tscn")
 
 
 func _on_quit_button_pressed() -> void:
-	await get_tree().create_timer(0.1).timeout
+	Audio.get_node("klick_sound").play()
 	get_tree().quit()
 
-
-func _on_play_button_mouse_entered() -> void:
-	pass # Replace with function body.
-
-
-
 func _on_instruction_pressed() -> void:
+	Audio.get_node("klick_sound").play()
 	get_tree().change_scene_to_file("res://game/menu/Instruction.tscn")
 
 
 func _on_back_pressed() -> void:
-	get_tree(). change_scene_to_file("res://game/menu/Main.tscn")# Replace with function body.
-	
+	Audio.get_node("klick_sound").play()
+	get_tree(). change_scene_to_file("res://game/menu/Main.tscn")

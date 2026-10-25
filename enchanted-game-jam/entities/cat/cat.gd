@@ -17,7 +17,6 @@ func _ready() -> void:
 	await get_tree().process_frame
 	player = get_tree().get_first_node_in_group("player")
 	add_to_group("cat")
-	animated_sprite.play("sit")
 
 func _physics_process(delta: float) -> void:
 	if player == null:
