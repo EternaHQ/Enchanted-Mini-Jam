@@ -1,0 +1,174 @@
+[gd_scene format=3 uid="uid://d0abro8t6daxn"]
+
+[ext_resource type="Script" uid="uid://dptygp3pv5f2t" path="res://game/level_7/victory_screen.gd" id="1_e63i8"]
+[ext_resource type="Texture2D" uid="uid://cpd474m7ojx7l" path="res://Victory screen/PNGSet/PNG_0001.png" id="2_i6s7h"]
+[ext_resource type="Texture2D" uid="uid://jwocf0sulpgn" path="res://Victory screen/PNGSet/PNG_0002.png" id="3_0n0ld"]
+[ext_resource type="Texture2D" uid="uid://gsc5il5ljdtq" path="res://Victory screen/PNGSet/PNG_0003.png" id="4_fr67x"]
+[ext_resource type="Texture2D" uid="uid://em6n0cgqo5ty" path="res://Victory screen/PNGSet/PNG_0004.png" id="5_8dqh1"]
+[ext_resource type="Texture2D" uid="uid://41qkbii11t2c" path="res://Victory screen/PNGSet/PNG_0005.png" id="6_opitg"]
+[ext_resource type="Texture2D" uid="uid://fbbrhd131p3n" path="res://Victory screen/PNGSet/PNG_0006.png" id="7_xh7bn"]
+[ext_resource type="Texture2D" uid="uid://bo5vr25ha7jc8" path="res://Victory screen/PNGSet/PNG_0007.png" id="8_mjcw4"]
+[ext_resource type="Texture2D" uid="uid://iiqgrfac5i2g" path="res://Victory screen/PNGSet/PNG_0008.png" id="9_8s2o2"]
+[ext_resource type="Texture2D" uid="uid://d03jbtp328kkf" path="res://Victory screen/PNGSet/PNG_0009.png" id="10_ho8c4"]
+[ext_resource type="Texture2D" uid="uid://r732he882vrk" path="res://Victory screen/PNGSet/PNG_0010.png" id="11_l7pg0"]
+[ext_resource type="Texture2D" uid="uid://byy7nifd3v83u" path="res://Victory screen/PNGSet/PNG_0011.png" id="12_xmn5e"]
+[ext_resource type="Texture2D" uid="uid://fj57p0a4gllu" path="res://Victory screen/PNGSet/PNG_0012.png" id="13_m5fj1"]
+[ext_resource type="Texture2D" uid="uid://bu2s4342roulc" path="res://Victory screen/PNGSet/PNG_0013.png" id="14_gsew7"]
+[ext_resource type="Texture2D" uid="uid://b3e2ges0y18y6" path="res://Victory screen/PNGSet/PNG_0014.png" id="15_0la0s"]
+[ext_resource type="Texture2D" uid="uid://nqvr8u7nqu0h" path="res://Victory screen/PNGSet/PNG_0015.png" id="16_nxou6"]
+[ext_resource type="Texture2D" uid="uid://bfie5ksrhrarf" path="res://Victory screen/PNGSet/PNG_0016.png" id="17_lvxlf"]
+[ext_resource type="Texture2D" uid="uid://ddowmd5y6lgsv" path="res://Victory screen/PNGSet/PNG_0017.png" id="18_7s3yr"]
+[ext_resource type="Texture2D" uid="uid://d0nojc8jqo6p2" path="res://Victory screen/PNGSet/PNG_0018.png" id="19_bj1n6"]
+[ext_resource type="Texture2D" uid="uid://g08ev6bn4r0r" path="res://Victory screen/PNGSet/PNG_0019.png" id="20_10cwq"]
+[ext_resource type="Texture2D" uid="uid://cisbm7s7cy2o1" path="res://Victory screen/PNGSet/PNG_0020.png" id="21_ri8kx"]
+[ext_resource type="Texture2D" uid="uid://1sodfh4ybcrv" path="res://Victory screen/PNGSet/PNG_0021.png" id="22_48pvx"]
+[ext_resource type="Texture2D" uid="uid://dqsd1hdo2h87u" path="res://Victory screen/PNGSet/PNG_0022.png" id="23_s6wu5"]
+[ext_resource type="Texture2D" uid="uid://dtifs3lnkg731" path="res://Victory screen/PNGSet/PNG_0023.png" id="24_eenio"]
+[ext_resource type="Texture2D" uid="uid://bf6tpfxp0logv" path="res://Victory screen/PNGSet/PNG_0024.png" id="25_qcli1"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://global/background/parallax_manager/parallax_manager.tscn" id="26_igsro"]
+[ext_resource type="FontFile" uid="uid://qb1gw4o02oah" path="res://game/menu/CatsAlphabet.ttf" id="27_r2hxr"]
+[ext_resource type="Texture2D" uid="uid://biexhibfbpq0h" path="res://game/menu/PNG_0001.png" id="28_nosr6"]
+[ext_resource type="Texture2D" uid="uid://beeywmiywklvn" path="res://game/menu/PNG_0003.png" id="29_htfhr"]
+[ext_resource type="Texture2D" uid="uid://bbfwt4o6ge0rn" path="res://game/menu/PNG_0002.png" id="30_sr3du"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dy8oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_i6s7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0n0ld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fr67x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8dqh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_opitg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xh7bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mjcw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8s2o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ho8c4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_l7pg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xmn5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_m5fj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gsew7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0la0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nxou6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lvxlf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7s3yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bj1n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_10cwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ri8kx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_48pvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_s6wu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_eenio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qcli1")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dy8oy"]
+font = ExtResource("27_r2hxr")
+font_size = 64
+font_color = Color(0.7775686, 0, 0.17085183, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpr0l"]
+font = ExtResource("27_r2hxr")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
+
+[node name="Control" type="Control" unique_id=1365159663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e63i8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=182392782]
+position = Vector2(963, 538)
+sprite_frames = SubResource("SpriteFrames_dy8oy")
+autoplay = "default"
+frame_progress = 0.3775109
+
+[node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("26_igsro")]
+
+[node name="Label" type="Label" parent="." unique_id=1333003809]
+layout_mode = 0
+offset_left = 958.0
+offset_top = 21.0
+offset_right = 1901.0
+offset_bottom = 192.0
+text = "CONGRATS
+YOUVE COMPLETED 
+ALL LEVELS"
+label_settings = SubResource("LabelSettings_dy8oy")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=797047441]
+layout_mode = 0
+offset_left = 1040.0001
+offset_top = 767.0
+offset_right = 1296.0001
+offset_bottom = 1151.0
+rotation = 4.712389
+scale = Vector2(1.4590063, 2.1691694)
+texture_normal = ExtResource("28_nosr6")
+texture_pressed = ExtResource("29_htfhr")
+texture_hover = ExtResource("30_sr3du")
+
+[node name="Label2" type="Label" parent="." unique_id=254411642]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 507.0
+offset_right = 1800.0
+offset_bottom = 672.0
+text = "PRESS HERE TO 
+PLAY AGAIN"
+label_settings = SubResource("LabelSettings_kpr0l")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
