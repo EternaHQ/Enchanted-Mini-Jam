@@ -16,9 +16,6 @@ func _ready() -> void:
 
 
 
-
-
-
 func _on_area_top_area_entered(area: Area2D) -> void:
 	
 
