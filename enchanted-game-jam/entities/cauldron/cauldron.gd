@@ -1,6 +1,7 @@
 extends StaticBody2D
 var level=1
 
+
 var Level1 = "res://game/level_1/Level1.tscn"
 var Level2 = "res://game/level_2/Level2.tscn"
 var Level3 = "res://game/level_3/Level3.tscn"
@@ -28,14 +29,25 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Reset"):
 		get_tree().change_scene_to_file(current_scene_file)
 
+var Level = "res://game/level/Level"
+
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("Reset"):
+		get_tree().change_scene_to_file("res://game/level_" + str(Gloabl.current_scene) + "/Level" + str(Gloabl.current_scene) + ".tscn")
+
+
 func _on_area_top_area_entered(area: Area2D) -> void:
 	
-
 	if area.name=='GrabArea2D':
 		print("cat is in cauldron")
 		area.get_parent().queue_free()
+
 		get_tree().change_scene_to_file(next_level)
 		Gloabl.current_scene+=1
+
+
+		Gloabl.current_scene += 1
+		get_tree().change_scene_to_file("res://game/level_" + str(Gloabl.current_scene) + "/Level" + str(Gloabl.current_scene) + ".tscn")
 
 
 func _on_downward_pull_body_entered(body: Node2D) -> void:
