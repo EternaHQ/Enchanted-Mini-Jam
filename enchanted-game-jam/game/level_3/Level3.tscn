@@ -2612,3 +2612,6 @@ position = Vector2(-51, -62)
 moving_platform = NodePath("../moving_platform")
 
 [node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("8_cp0jt")]
+
+[connection signal="press" from="pressure_plate" to="moving_platform" method="_on_pressure_plate_press"]
+[connection signal="unpress" from="pressure_plate" to="moving_platform" method="_on_pressure_plate_unpress"]
