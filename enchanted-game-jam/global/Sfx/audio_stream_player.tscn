@@ -23,6 +23,7 @@ autoplay = true
 
 [node name="pick_up" type="AudioStreamPlayer" parent="." unique_id=1875195988]
 stream = ExtResource("3_o7ys6")
+volume_db = -10.0
 
 [node name="throw" type="AudioStreamPlayer" parent="." unique_id=1595368531]
 stream = ExtResource("4_1xg84")

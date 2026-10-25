@@ -21,4 +21,5 @@ func _on_back_pressed() -> void:
 
 func _on_endless_button_pressed() -> void:
 	Audio.get_node("klick_sound").play()
+	Gloabl.current_scene = -1
 	get_tree(). change_scene_to_file("res://game/level_-1/Level-1.tscn")
