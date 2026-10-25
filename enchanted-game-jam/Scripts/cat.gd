@@ -6,7 +6,7 @@ extends CharacterBody2D
 @onready var timer: Timer = $Timer
 
 var player: CharacterBody2D
-var gravity: float = 60.0
+var gravity: float = 40.0
 var downward_pull: float = 200
 var is_grabbed: bool = false
 var just_launched: bool = false
