@@ -3093,9 +3093,8 @@ tile_set = SubResource("TileSet_kpr0l")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=62290796]
 
-[node name="pressure_plate" parent="." unique_id=163490274 node_paths=PackedStringArray("Klappe") instance=ExtResource("6_joys2")]
+[node name="pressure_plate" parent="." unique_id=163490274 instance=ExtResource("6_joys2")]
 position = Vector2(-51, -62)
-Klappe = NodePath("")
 
 [node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("7_fiago")]
 

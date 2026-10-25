@@ -14,14 +14,21 @@ func _process(delta: float) -> void:
 
 var kann_spawnen := true
 
+
+
+
+
 func _on_pressure_plate_press() -> void:
-	if not kann_spawnen:
-		return
-	kann_spawnen = false
+	if Gloabl.current_scene==5:
+		if not kann_spawnen:
+			return
+		kann_spawnen = false
 
-	var instanz = chest.instantiate()
-	instanz.position = Vector2(277, -876)
-	node_2d.add_child(instanz)
+		var instanz = chest.instantiate()
+		instanz.position = Vector2(277, -876)
+		node_2d.add_child(instanz)
 
-	await get_tree().create_timer(1.0).timeout
-	kann_spawnen = true
+		await get_tree().create_timer(1.0).timeout
+		kann_spawnen = true
+	if Gloabl.current_scene==6:
+		pass

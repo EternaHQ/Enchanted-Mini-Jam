@@ -7,6 +7,7 @@ signal unpress
 
 
 func _on_body_entered(body: Node2D) -> void:
+	print("hey")
 	press.emit()
 		
 
