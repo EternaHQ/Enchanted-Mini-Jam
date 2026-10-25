@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://njkqo6qhl0v4"]
 
 [ext_resource type="Texture2D" uid="uid://bw8o5dv30w4r7" path="res://Assets/signal-2026-10-23-223514.png" id="1_0xcsw"]
-[ext_resource type="Script" uid="uid://d128kwt0boi1v" path="res://Scripts/cat.gd" id="1_23j0x"]
+[ext_resource type="Script" uid="uid://b1trw0hkc8u3j" path="res://Scripts/cat.gd" id="1_23j0x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v0s4m"]
 radius = 56.0
