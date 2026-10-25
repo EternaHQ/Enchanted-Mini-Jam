@@ -1,8 +1,8 @@
-[gd_scene format=4 uid="uid://ioa3nbtu13r4"]
+[gd_scene format=4 uid="uid://cde12tnajjkpo"]
 
-[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="1_6bxdk"]
-[ext_resource type="Script" uid="uid://b8lii4hgkso78" path="res://animatable_body_2d.gd" id="1_sxd65"]
-[ext_resource type="Script" uid="uid://cltd4tyf4hpr0" path="res://moving_platform.gd" id="1_vog4p"]
+[ext_resource type="Texture2D" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="1_6bxdk"]
+[ext_resource type="Script" path="res://animatable_body_2d.gd" id="1_sxd65"]
+[ext_resource type="Script" path="res://moving_platform.gd" id="1_vog4p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sxd65"]
 texture = ExtResource("1_6bxdk")

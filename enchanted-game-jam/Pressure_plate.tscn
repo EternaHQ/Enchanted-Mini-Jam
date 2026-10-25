@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://dlr2bc1iwol5v"]
+[gd_scene format=3 uid="uid://bmqkffb7r7mdv"]
 
-[ext_resource type="Script" uid="uid://c2dtvu0qwqrgx" path="res://area_2d.gd" id="1_p3gwl"]
-[ext_resource type="Texture2D" uid="uid://dk57jqrash6s4" path="res://Assets/Presurre plate/PNG_0001.png" id="2_8fxpd"]
+[ext_resource type="Script" path="res://area_2d.gd" id="1_p3gwl"]
+[ext_resource type="Texture2D" path="res://Assets/Presurre plate/PNG_0001.png" id="2_8fxpd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kpr0l"]
 animations = [{
