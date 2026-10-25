@@ -17,10 +17,11 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kpr0l"]
 height = 115.63092
 
-[node name="pressure_plate" type="Area2D" unique_id=163490274]
+[node name="pressure_plate" type="Area2D" unique_id=163490274 node_paths=PackedStringArray("Klappe")]
 collision_layer = 255
 collision_mask = 255
 script = ExtResource("1_p3gwl")
+Klappe = NodePath(".")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1426556530]
 sprite_frames = SubResource("SpriteFrames_kpr0l")

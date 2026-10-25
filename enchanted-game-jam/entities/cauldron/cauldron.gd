@@ -4,6 +4,7 @@ var level=1
 var Level1 = "res://game/level_1/Level1.tscn"
 var Level2 = "res://game/level_2/Level2.tscn"
 var Level3 = "res://game/level_3/Level3.tscn"
+var Level4 = "res://game/Level4/Level4.tscn"
 func _physics_process(delta: float) -> void:
 	pass
 var next_level
@@ -12,7 +13,8 @@ func _ready() -> void:
 		next_level=Level2
 	if Gloabl.current_scene==2:
 		next_level=Level3
-
+	if Gloabl.current_scene==3:
+		next_level=Level4
 
 
 

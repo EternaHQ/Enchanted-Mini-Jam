@@ -4432,9 +4432,6 @@ sources/1 = SubResource("TileSetAtlasSource_6ll4n")
 sources/2 = SubResource("TileSetAtlasSource_ysn8j")
 sources/3 = SubResource("TileSetAtlasSource_rpty4")
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_kpr0l"]
-polygon = PackedVector2Array(-22, 26.5, -6, 46.5, 18.5, 47, 36.5, 31, 35.5, 6.5, 47.5, -10.5, 19.5, -11.5, -17.5, -39.5, -34.5, -47, -56, -36, -62.5, -27.5, -39, -31, -35.5, -27.5, -35.5, -20, -35.5, -11.5, -38, -6.5, -50.5, 5.5, -50.5, 13, -55, 21.5, -47.5, 21.5, -30.5, 21.5)
-
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dy8oy"]
 distance = 4.0
 
@@ -4949,9 +4946,6 @@ position = Vector2(-6, 5)
 zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
-
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Player" unique_id=115606968]
-occluder = SubResource("OccluderPolygon2D_kpr0l")
 
 [node name="Secret" type="StaticBody2D" parent="." unique_id=217643692]
 
