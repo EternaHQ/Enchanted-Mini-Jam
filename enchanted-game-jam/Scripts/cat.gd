@@ -7,7 +7,7 @@ extends CharacterBody2D
 
 var player: CharacterBody2D
 var gravity: float = 60.0
-var downward_pull: float = 120
+var downward_pull: float = 200
 var is_grabbed: bool = false
 var just_launched = false
 var in_downward_pull: bool = false

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bh65c7ue06ckp"]
 
-[ext_resource type="Script" path="res://Scenes/cauldron.gd" id="1_2rulr"]
+[ext_resource type="Script" uid="uid://bdxgdnjj23cmd" path="res://Scripts/cauldron.gd" id="1_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://c52l80m6vgxqe" path="res://Assets/signal-2026-10-25-01-44-26-846_002.png" id="2_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://6i5jrby175m" path="res://Assets/PNGSet/PNG_0001.png" id="2_v2jri"]
 [ext_resource type="Texture2D" uid="uid://bfda541g70tpt" path="res://Assets/PNGSet/PNG_0002.png" id="3_oiwvb"]
@@ -48,10 +48,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ejmsa"]
-size = Vector2(313, 1061)
+size = Vector2(476, 1061)
 
 [node name="Cauldron" type="StaticBody2D" unique_id=606351460]
-script = ExtResource("1_2rulr")
+script = ExtResource("1_oiwvb")
 
 [node name="Area_top" type="Area2D" parent="." unique_id=2028879698]
 collision_layer = 18
@@ -77,7 +77,7 @@ polygon = PackedVector2Array(192, 25, 211, 109, 144, 205, 9, 236, -149, 207, -20
 position = Vector2(-1, 47)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="downward_pull" unique_id=1084684056]
-position = Vector2(2.5, -619.5)
+position = Vector2(-11, -619.5)
 shape = SubResource("RectangleShape2D_ejmsa")
 
 [connection signal="area_entered" from="Area_top" to="." method="_on_area_top_area_entered"]

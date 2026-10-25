@@ -28,9 +28,7 @@ func _on_area_top_area_entered(area: Area2D) -> void:
 # Replace with function body.
 
 func _on_downward_pull_body_entered(body: Node2D) -> void:
-	print("AAAA")
 	if body.is_in_group("cat"):
-		
 		body.in_downward_pull = true
 
 
