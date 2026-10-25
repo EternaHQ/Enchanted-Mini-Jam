@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dlr2bc1iwol5v"]
+
+[ext_resource type="Script" uid="uid://c2dtvu0qwqrgx" path="res://area_2d.gd" id="1_p3gwl"]
+[ext_resource type="Texture2D" uid="uid://dk57jqrash6s4" path="res://Assets/Presurre plate/PNG_0001.png" id="2_8fxpd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kpr0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8fxpd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D" unique_id=163490274]
+script = ExtResource("1_p3gwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1426556530]
+sprite_frames = SubResource("SpriteFrames_kpr0l")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1395103547]
+position = Vector2(1.2152269, 55.7123)
+polygon = PackedVector2Array(-52.215225, -3.7122993, -59.215225, 6.2877007, 54.784775, 6.2877007, 49.784775, -5.7122993, 21.784773, -7.7122993, -21.215227, -6.7122993, -52.215225, -3.7122993)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
