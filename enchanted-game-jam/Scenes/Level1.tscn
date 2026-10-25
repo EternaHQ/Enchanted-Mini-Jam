@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://Scenes/cat.tscn" id="2_t3or0"]
 [ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://Scenes/cauldron.tscn" id="3_ysn8j"]
 [ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://Scenes/Player.tscn" id="4_6ll4n"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://Scenes/parallax_manager.tscn" id="5_slnnj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mc20k"]
 texture = ExtResource("1_slnnj")
@@ -2612,3 +2613,5 @@ offset_bottom = -8306.0
 theme_override_font_sizes/font_size = 50
 text = "congrats yuo found found a secret
 "
+
+[node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("5_slnnj")]
