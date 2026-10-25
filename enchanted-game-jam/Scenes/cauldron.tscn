@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bh65c7ue06ckp"]
 
-[ext_resource type="Script" uid="uid://bdxgdnjj23cmd" path="res://Scripts/cauldron.gd" id="1_oiwvb"]
+[ext_resource type="Script" uid="uid://c67x3ly6tijlm" path="res://Scripts/cauldron.gd" id="1_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://c52l80m6vgxqe" path="res://Assets/signal-2026-10-25-01-44-26-846_002.png" id="2_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://6i5jrby175m" path="res://Assets/PNGSet/PNG_0001.png" id="2_v2jri"]
 [ext_resource type="Texture2D" uid="uid://bfda541g70tpt" path="res://Assets/PNGSet/PNG_0002.png" id="3_oiwvb"]
@@ -63,11 +63,8 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
 [node name="back_sprite" type="Sprite2D" parent="." unique_id=1457933939]
-
 visible = false
 position = Vector2(0, -24)
-
-
 texture = ExtResource("2_oiwvb")
 
 [node name="front_sprite" type="AnimatedSprite2D" parent="." unique_id=655461960]
