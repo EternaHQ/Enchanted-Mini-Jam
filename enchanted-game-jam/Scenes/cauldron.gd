@@ -2,7 +2,7 @@ extends StaticBody2D
 var level=1
 
 var Level1="res://Scenes/Level1.tscn"
-var Level2="res://Scenes/Level2.tscn"
+var Level2="res://Level2.tscn"
 func _physics_process(delta: float) -> void:
 	pass
 var current_scene=1
@@ -25,4 +25,5 @@ func _on_area_top_area_entered(area: Area2D) -> void:
 		area.get_parent().queue_free()
 		get_tree().change_scene_to_file(next_level)
 		current_scene+=1
+		
 	 # Replace with function body.

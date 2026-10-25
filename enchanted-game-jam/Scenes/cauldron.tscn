@@ -63,11 +63,8 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_b37d6")
 
 [node name="back_sprite" type="Sprite2D" parent="." unique_id=1457933939]
-
 visible = false
 position = Vector2(0, -24)
-
-
 texture = ExtResource("2_oiwvb")
 
 [node name="front_sprite" type="AnimatedSprite2D" parent="." unique_id=655461960]
