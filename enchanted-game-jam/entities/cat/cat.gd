@@ -4,6 +4,8 @@ extends CharacterBody2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var grab_area: Area2D = $GrabArea2D
 @onready var timer: Timer = $Timer
+var a: int = 0
+var b: int = 0
 
 var player: CharacterBody2D
 var gravity: float = 40.0
@@ -71,10 +73,17 @@ func _on_grab_area_2d_body_entered(body: Node2D) -> void:
 	
 
 func change_movement() -> void:
+	if Gloabl.current_scene != -1:
+		a = 500
+		b = 2000
+	else:
+		a = 50
+		b = 200
+	
 	if velocity.x > 0:
-		velocity.x = randf_range(-2000, -500)
+		velocity.x = randf_range(-b, -a)
 	if velocity.x < 0:
-		velocity.x = randf_range(500, 2000)
+		velocity.x = randf_range(a, b)
 	else:
 		velocity.x = randf_range(-2000, 2000)
 	if velocity.x > 0:

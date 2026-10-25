@@ -6,13 +6,13 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_area_top_area_entered(area: Area2D) -> void:
-	
 	if area.name=='GrabArea2D':
 		Audio.get_node("cat_in_cauldron").play()
 		print("cat is in cauldron")
 		area.get_parent().queue_free()
-		Gloabl.current_scene += 1
-		get_tree().change_scene_to_file("res://game/level_" + str(Gloabl.current_scene) + "/Level" + str(Gloabl.current_scene) + ".tscn")
+		if Gloabl.current_scene > 0:
+			Gloabl.current_scene += 1
+			get_tree().change_scene_to_file("res://game/level_" + str(Gloabl.current_scene) + "/Level" + str(Gloabl.current_scene) + ".tscn")
 
 
 func _on_downward_pull_body_entered(body: Node2D) -> void:

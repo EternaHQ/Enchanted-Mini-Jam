@@ -1,2 +1,2 @@
 extends Node
-var current_scene: int =1
+var current_scene: int = -1
