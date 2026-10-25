@@ -62,7 +62,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _on_grab_area_2d_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
+	if body.is_in_group("player") and is_grabbed == false:
 		Audio.get_node("pick_up").play()
 		is_grabbed = true
 		animated_sprite.play("grabbed")

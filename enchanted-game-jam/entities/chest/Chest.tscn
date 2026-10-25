@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://02uhi7ydj00u"]
 
 [ext_resource type="Texture2D" uid="uid://cj04pntc3w5gg" path="res://entities/chest/lilacrate.png" id="1_4gslm"]
+[ext_resource type="Script" uid="uid://eiku3rahsciv" path="res://entities/chest/chest.gd" id="1_rogmm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpr0l"]
 size = Vector2(249, 248)
@@ -18,6 +19,7 @@ animations = [{
 
 [node name="RigidBody2D" type="RigidBody2D" unique_id=1527802656]
 collision_layer = 9
+script = ExtResource("1_rogmm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1607521047]
 position = Vector2(0.5, 1)

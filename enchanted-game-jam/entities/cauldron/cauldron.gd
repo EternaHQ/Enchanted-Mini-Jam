@@ -8,6 +8,7 @@ func _physics_process(delta: float) -> void:
 func _on_area_top_area_entered(area: Area2D) -> void:
 	
 	if area.name=='GrabArea2D':
+		Audio.get_node("cat_in_cauldron").play()
 		print("cat is in cauldron")
 		area.get_parent().queue_free()
 		Gloabl.current_scene += 1
