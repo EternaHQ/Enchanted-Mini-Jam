@@ -1,14 +1,13 @@
 [gd_scene format=3 uid="uid://ck0fxugrbtgja"]
 
 [ext_resource type="Texture2D" uid="uid://biexhibfbpq0h" path="res://Assets/Button/PNG_0001.png" id="1_7sj7i"]
+[ext_resource type="Script" uid="uid://7n3n1i8p16di" path="res://Scripts/main_menu.gd" id="1_ep8v8"]
 [ext_resource type="Texture2D" uid="uid://bbfwt4o6ge0rn" path="res://Assets/Button/PNG_0002.png" id="2_ep8v8"]
 [ext_resource type="Texture2D" uid="uid://b113uar7p4edh" path="res://Assets/titlescreen sheet/PNG_0001.png" id="2_lfh1j"]
 [ext_resource type="Texture2D" uid="uid://co1cf80n201m2" path="res://Assets/titlescreen sheet/PNG_0002.png" id="3_7sj7i"]
 [ext_resource type="Texture2D" uid="uid://beeywmiywklvn" path="res://Assets/Button/PNG_0003.png" id="3_3133c"]
-[ext_resource type="Script" uid="uid://7n3n1i8p16di" path="res://Scripts/texture_button.gd" id="4_ep8v8"]
 [ext_resource type="FontFile" uid="uid://qb1gw4o02oah" path="res://Scenes/CatsAlphabet.ttf" id="4_pbw6q"]
 [ext_resource type="Texture2D" uid="uid://twxoo1j5dyin" path="res://Assets/titlescreen sheet/PNG_0003.png" id="4_semxg"]
-[ext_resource type="Script" uid="uid://df1x1b2mbfjmy" path="res://Scripts/texture_button_2.gd" id="5_3133c"]
 [ext_resource type="Texture2D" uid="uid://esd0q12ovdum" path="res://Assets/titlescreen sheet/PNG_0004.png" id="5_ep8v8"]
 [ext_resource type="Texture2D" uid="uid://dvnrfjyxsgdjh" path="res://Assets/titlescreen sheet/PNG_0005.png" id="6_3133c"]
 [ext_resource type="Texture2D" uid="uid://ch1lk5uuohejr" path="res://Assets/titlescreen sheet/PNG_0006.png" id="7_js5gh"]
@@ -54,6 +53,16 @@
 [ext_resource type="Texture2D" uid="uid://dp0664edrfx0f" path="res://Assets/titlescreen sheet/PNG_0046.png" id="47_e2umn"]
 [ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://Assets/titlescreen sheet/PNG_0047.png" id="48_k6daw"]
 [ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://Assets/titlescreen sheet/PNG_0048.png" id="49_05y1e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
+font = ExtResource("4_pbw6q")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oeq8l"]
+font = ExtResource("4_pbw6q")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_idj7w"]
 animations = [{
@@ -212,16 +221,6 @@ font = ExtResource("4_pbw6q")
 font_size = 128
 font_color = Color(1, 1, 0.35686275, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
-font = ExtResource("4_pbw6q")
-font_size = 64
-font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_oeq8l"]
-font = ExtResource("4_pbw6q")
-font_size = 64
-font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
-
 [node name="Control" type="Control" unique_id=1320536645]
 layout_mode = 3
 anchors_preset = 15
@@ -231,8 +230,9 @@ offset_right = -588.0
 offset_bottom = -41.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ep8v8")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=738948679]
+[node name="PlayButton" type="TextureButton" parent="." unique_id=738948679]
 layout_mode = 0
 offset_left = 31.0
 offset_top = 708.0
@@ -242,9 +242,26 @@ rotation = -1.5707964
 texture_normal = ExtResource("1_7sj7i")
 texture_pressed = ExtResource("3_3133c")
 texture_hover = ExtResource("2_ep8v8")
-script = ExtResource("4_ep8v8")
 
-[node name="TextureButton2" type="TextureButton" parent="." unique_id=1712063749]
+[node name="Label" type="Label" parent="PlayButton" unique_id=1396648643]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = -40.5
+offset_right = 113.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_rotation = 1.5707964
+text = "PLAY"
+label_settings = SubResource("LabelSettings_v0s4m")
+
+[node name="QuitButton" type="TextureButton" parent="." unique_id=1712063749]
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 31.0
@@ -255,7 +272,24 @@ rotation = -1.5707964
 texture_normal = ExtResource("1_7sj7i")
 texture_pressed = ExtResource("3_3133c")
 texture_hover = ExtResource("2_ep8v8")
-script = ExtResource("5_3133c")
+
+[node name="Label" type="Label" parent="QuitButton" unique_id=2031006171]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -108.0
+offset_top = -40.5
+offset_right = 108.0
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+offset_transform_enabled = true
+offset_transform_rotation = 1.5707964
+text = "QUIT"
+label_settings = SubResource("LabelSettings_oeq8l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=323228528]
 z_index = -1
@@ -276,23 +310,5 @@ text = "COOK THE
     AT"
 label_settings = SubResource("LabelSettings_kym2j")
 
-[node name="Label2" type="Label" parent="." unique_id=1396648643]
-layout_mode = 0
-offset_left = 114.0
-offset_top = 543.0
-offset_right = 340.0
-offset_bottom = 624.0
-text = "PLAY"
-label_settings = SubResource("LabelSettings_v0s4m")
-
-[node name="Label3" type="Label" parent="." unique_id=2031006171]
-layout_mode = 0
-offset_left = 118.0
-offset_top = 751.0
-offset_right = 334.0
-offset_bottom = 832.0
-text = "QUIT"
-label_settings = SubResource("LabelSettings_oeq8l")
-
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="TextureButton2" to="TextureButton" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
