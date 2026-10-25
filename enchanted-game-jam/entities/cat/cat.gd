@@ -24,7 +24,7 @@ func _physics_process(delta: float) -> void:
 	if player == null:
 		return
 	if is_grabbed:
-		velocity = (player.global_position + Vector2(0, -100) - global_position) * 10
+		velocity = (player.global_position + Vector2(0, -100) - global_position) * 7
 		move_and_slide()
 	else:
 		if ! just_launched and randi_range(0, 30) == 0 and !start_still:
