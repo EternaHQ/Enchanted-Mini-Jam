@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://02uhi7ydj00u"]
 
-[ext_resource type="Texture2D" uid="uid://cj04pntc3w5gg" path="res://Assets/lilacrate.png" id="1_4gslm"]
+[ext_resource type="Texture2D" uid="uid://cj04pntc3w5gg" path="res://entities/chest/lilacrate.png" id="1_4gslm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpr0l"]
 size = Vector2(249, 248)

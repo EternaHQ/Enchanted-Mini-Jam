@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dte7fvrty7rwx"]
 
-[ext_resource type="Script" uid="uid://crwwm1p6hnmp" path="res://Scripts/parallax_manager.gd" id="1_fusj1"]
-[ext_resource type="Texture2D" uid="uid://dlpt3xw36agrt" path="res://Assets/parallax assets/background.png" id="2_qhq66"]
-[ext_resource type="Texture2D" uid="uid://ckfa7ita0w3yo" path="res://Assets/parallax assets/parrallax middle.png" id="3_h23lw"]
-[ext_resource type="Texture2D" uid="uid://cfg5g32jw6cli" path="res://Assets/parallax assets/unbenannt - 25~01.png" id="4_n3ndk"]
+[ext_resource type="Script" uid="uid://crwwm1p6hnmp" path="res://global/background/parallax_manager/parallax_manager.gd" id="1_fusj1"]
+[ext_resource type="Texture2D" uid="uid://dlpt3xw36agrt" path="res://global/background/textures/background.png" id="2_qhq66"]
+[ext_resource type="Texture2D" uid="uid://ckfa7ita0w3yo" path="res://global/background/parallax_manager/parrallax middle.png" id="3_h23lw"]
+[ext_resource type="Texture2D" uid="uid://cfg5g32jw6cli" path="res://global/background/parallax_manager/unbenannt - 25~01.png" id="4_n3ndk"]
 
 [node name="ParallaxManager" type="Node2D" unique_id=65362214]
 z_index = -1

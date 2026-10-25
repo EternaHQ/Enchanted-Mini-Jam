@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://bidh5qdi5s2ys"]
 
-[ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://Scenes/Player.tscn" id="1_qlmxs"]
-[ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://Scenes/cauldron.tscn" id="2_545p4"]
-[ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://Scenes/cat.tscn" id="3_h8oof"]
-[ext_resource type="PackedScene" uid="uid://02uhi7ydj00u" path="res://Chest.tscn" id="4_nqeel"]
-[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="5_u5lf4"]
-[ext_resource type="PackedScene" uid="uid://ioa3nbtu13r4" path="res://Moving_platform.tscn" id="6_084pi"]
-[ext_resource type="PackedScene" uid="uid://dlr2bc1iwol5v" path="res://Pressure_plate.tscn" id="7_43mlh"]
-[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://Scenes/parallax_manager.tscn" id="8_cp0jt"]
+[ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://entities/player/Player.tscn" id="1_qlmxs"]
+[ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://entities/cauldron/cauldron.tscn" id="2_545p4"]
+[ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://entities/cat/cat.tscn" id="3_h8oof"]
+[ext_resource type="PackedScene" uid="uid://02uhi7ydj00u" path="res://entities/chest/Chest.tscn" id="4_nqeel"]
+[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://global/background/textures/terrain.png" id="5_u5lf4"]
+[ext_resource type="PackedScene" uid="uid://ioa3nbtu13r4" path="res://entities/moving_plattform/Moving_platform.tscn" id="6_084pi"]
+[ext_resource type="PackedScene" uid="uid://dlr2bc1iwol5v" path="res://entities/preassure_plate/Pressure_plate.tscn" id="7_43mlh"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://global/background/parallax_manager/parallax_manager.tscn" id="8_cp0jt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("5_u5lf4")

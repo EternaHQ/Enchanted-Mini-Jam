@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" uid="uid://bdxgdnjj23cmd" path="res://entities/cauldron/cauldron.gd" id="1_oiwvb"]
 [ext_resource type="Texture2D" uid="uid://c52l80m6vgxqe" path="res://entities/cauldron/signal-2026-10-25-01-44-26-846_002.png" id="2_oiwvb"]
-[ext_resource type="Texture2D" uid="uid://6i5jrby175m" path="res://Assets/PNGSet/PNG_0001.png" id="2_v2jri"]
-[ext_resource type="Texture2D" uid="uid://bfda541g70tpt" path="res://Assets/PNGSet/PNG_0002.png" id="3_oiwvb"]
-[ext_resource type="Texture2D" uid="uid://0m06h78kvroo" path="res://Assets/PNGSet/PNG_0003.png" id="4_uhwwe"]
-[ext_resource type="Texture2D" uid="uid://blc3f12a45ivj" path="res://Assets/PNGSet/PNG_0004.png" id="5_sg3l0"]
-[ext_resource type="Texture2D" uid="uid://ds5nsg2ajwt3k" path="res://Assets/PNGSet/PNG_0005.png" id="6_axbx3"]
-[ext_resource type="Texture2D" uid="uid://ddy3n6hux7vcl" path="res://Assets/PNGSet/PNG_0006.png" id="7_h8o5g"]
-[ext_resource type="Texture2D" uid="uid://bppff2m1uvjql" path="res://Assets/PNGSet/PNG_0007.png" id="8_qspni"]
-[ext_resource type="Texture2D" uid="uid://prvkp3q5n6rb" path="res://Assets/PNGSet/PNG_0008.png" id="9_hckop"]
+[ext_resource type="Texture2D" uid="uid://6i5jrby175m" path="res://entities/cauldron/PNG_0001.png" id="2_v2jri"]
+[ext_resource type="Texture2D" uid="uid://bfda541g70tpt" path="res://entities/cauldron/PNG_0002.png" id="3_oiwvb"]
+[ext_resource type="Texture2D" uid="uid://0m06h78kvroo" path="res://entities/cauldron/PNG_0003.png" id="4_uhwwe"]
+[ext_resource type="Texture2D" uid="uid://blc3f12a45ivj" path="res://entities/cauldron/PNG_0004.png" id="5_sg3l0"]
+[ext_resource type="Texture2D" uid="uid://ds5nsg2ajwt3k" path="res://entities/cauldron/PNG_0005.png" id="6_axbx3"]
+[ext_resource type="Texture2D" uid="uid://ddy3n6hux7vcl" path="res://entities/cauldron/PNG_0006.png" id="7_h8o5g"]
+[ext_resource type="Texture2D" uid="uid://bppff2m1uvjql" path="res://entities/cauldron/PNG_0007.png" id="8_qspni"]
+[ext_resource type="Texture2D" uid="uid://prvkp3q5n6rb" path="res://entities/cauldron/PNG_0008.png" id="9_hckop"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b37d6"]
 radius = 44.0

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://df13sdvgxsghf"]
 
 [ext_resource type="Script" uid="uid://b81trn3ey0ken" path="res://entities/player/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://blipil53thksa" path="res://Assets/Sprites/enchanted game jam - Kopie/player/spritesheet.png" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://blipil53thksa" path="res://entities/player/spritesheet.png" id="1_rpqav"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyqiw"]
 atlas = ExtResource("1_rpqav")

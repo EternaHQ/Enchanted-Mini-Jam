@@ -1,8 +1,7 @@
-[gd_scene format=4 uid="uid://cde12tnajjkpo"]
+[gd_scene format=4 uid="uid://ioa3nbtu13r4"]
 
-[ext_resource type="Texture2D" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="1_6bxdk"]
-[ext_resource type="Script" path="res://animatable_body_2d.gd" id="1_sxd65"]
-[ext_resource type="Script" path="res://moving_platform.gd" id="1_vog4p"]
+[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://global/background/textures/terrain.png" id="1_6bxdk"]
+[ext_resource type="Script" uid="uid://cltd4tyf4hpr0" path="res://entities/moving_plattform/moving_platform.gd" id="1_vog4p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sxd65"]
 texture = ExtResource("1_6bxdk")
@@ -2629,7 +2628,6 @@ _data = {
 script = ExtResource("1_vog4p")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1785324961]
-script = ExtResource("1_sxd65")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AnimatableBody2D" unique_id=2017986132]
 position = Vector2(136.62032, -685.1386)

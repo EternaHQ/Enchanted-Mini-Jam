@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://entities/cauldron/cauldron.tscn" id="2_dbd10"]
 [ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://entities/cat/cat.tscn" id="3_rhkd2"]
 [ext_resource type="PackedScene" uid="uid://02uhi7ydj00u" path="res://entities/chest/Chest.tscn" id="4_juo8o"]
-[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="5_ccggq"]
-[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://Scenes/parallax_manager.tscn" id="6_3nho5"]
+[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://global/background/textures/terrain.png" id="5_ccggq"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://global/background/parallax_manager/parallax_manager.tscn" id="6_3nho5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("5_ccggq")

@@ -1,14 +1,14 @@
 [gd_scene format=4 uid="uid://dktftw8ryjsmc"]
 
-[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="1_aq2y8"]
-[ext_resource type="Texture2D" uid="uid://hwd60hh8qliy" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/plant/Plant Not animated.jpg" id="2_2v7qc"]
+[ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://global/background/textures/terrain.png" id="1_aq2y8"]
+[ext_resource type="Texture2D" uid="uid://hwd60hh8qliy" path="res://global/background/textures/Plant Not animated.jpg" id="2_2v7qc"]
 [ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://entities/cat/cat.tscn" id="3_e4k1j"]
 [ext_resource type="Texture2D" uid="uid://dgncegufrg6p5" path="res://Assets/Pflanzen ohne bg.png" id="3_kylad"]
 [ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://entities/cauldron/cauldron.tscn" id="4_ueaaj"]
 [ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://entities/player/Player.tscn" id="5_np8gn"]
-[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://Scenes/parallax_manager.tscn" id="6_cwdmx"]
+[ext_resource type="PackedScene" uid="uid://dte7fvrty7rwx" path="res://global/background/parallax_manager/parallax_manager.tscn" id="6_cwdmx"]
 [ext_resource type="Texture2D" uid="uid://b3e47p676fraq" path="res://Assets/rose.png" id="8_bdlbp"]
-[ext_resource type="Texture2D" uid="uid://dxow0p4a8gjah" path="res://Assets/PNGSet/lampe.jpg" id="9_2h8qs"]
+[ext_resource type="Texture2D" uid="uid://dxow0p4a8gjah" path="res://global/background/textures/lampe.jpg" id="9_2h8qs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mc20k"]
 texture = ExtResource("1_aq2y8")
