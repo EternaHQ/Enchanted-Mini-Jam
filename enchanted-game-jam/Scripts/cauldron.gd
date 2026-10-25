@@ -1,8 +1,8 @@
 extends StaticBody2D
 var level=1
 
-var Level1="res://Scenes/Level1.tscn"
-var Level2="res://Level2.tscn"
+var Level1 = "res://Scenes/Level1.tscn"
+var Level2 = "res://Scenes/Level2.tscn"
 func _physics_process(delta: float) -> void:
 	pass
 var current_scene=1
