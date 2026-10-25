@@ -54,6 +54,7 @@
 [ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://game/menu/background/PNG_0047.png" id="48_k6daw"]
 [ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://game/menu/background/PNG_0048.png" id="49_05y1e"]
 [ext_resource type="Script" uid="uid://b0xosid8rmk1j" path="res://game/menu/instruction.gd" id="54_chqs2"]
+[ext_resource type="Script" uid="uid://qthjwhtf34vn" path="res://game/menu/level_jump.gd" id="55_ox5jd"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
 font = ExtResource("4_pbw6q")
@@ -339,6 +340,18 @@ text = "HOW
 TO PLAY"
 label_settings = SubResource("LabelSettings_dy8oy")
 
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1484375788]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.051000003
+anchor_bottom = 0.032
+offset_left = 1721.0
+offset_top = 28.0
+offset_right = 1721.568
+offset_bottom = 27.543999
+script = ExtResource("55_ox5jd")
+
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
 [connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]
+[connection signal="text_submitted" from="LineEdit" to="LineEdit" method="_on_text_submitted"]
