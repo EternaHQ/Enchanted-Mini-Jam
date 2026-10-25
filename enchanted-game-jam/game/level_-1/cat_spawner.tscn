@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dufcg6gj1s2r3"]
+
+[ext_resource type="Script" uid="uid://cf2fbqpxub4v8" path="res://game/level_-1/cat_spawner.gd" id="1_7xi10"]
+
+[node name="cat_spawner" type="Node2D" unique_id=1155874007]
+script = ExtResource("1_7xi10")

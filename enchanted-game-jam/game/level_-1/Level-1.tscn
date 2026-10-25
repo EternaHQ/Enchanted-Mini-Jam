@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://global/background/textures/terrain.png" id="1_c2g83"]
 [ext_resource type="PackedScene" uid="uid://bh65c7ue06ckp" path="res://entities/cauldron/cauldron.tscn" id="2_40p8k"]
 [ext_resource type="Script" uid="uid://bo2m8lnbij3wl" path="res://game/level_-1/cats.gd" id="3_3lb3k"]
-[ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://entities/cat/cat.tscn" id="4_ui660"]
 [ext_resource type="PackedScene" uid="uid://df13sdvgxsghf" path="res://entities/player/Player.tscn" id="5_3lb3k"]
+[ext_resource type="PackedScene" uid="uid://dufcg6gj1s2r3" path="res://game/level_-1/cat_spawner.tscn" id="5_ui660"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tv6y0"]
 texture = ExtResource("1_c2g83")
@@ -2602,14 +2602,35 @@ shape = SubResource("WorldBoundaryShape2D_ejmsa")
 [node name="Cats" type="Node" parent="." unique_id=1486783313]
 script = ExtResource("3_3lb3k")
 
-[node name="Cat" parent="Cats" unique_id=2111745954 instance=ExtResource("4_ui660")]
-position = Vector2(2624, -1857)
+[node name="cat_spawner" parent="Cats" unique_id=1155874007 instance=ExtResource("5_ui660")]
+position = Vector2(2916, -1087)
 
-[node name="Cat2" parent="Cats" unique_id=426255460 instance=ExtResource("4_ui660")]
-position = Vector2(-1493, -1880)
+[node name="cat_spawner2" parent="Cats" unique_id=448640461 instance=ExtResource("5_ui660")]
+position = Vector2(2352, -1133)
 
-[node name="Cat3" parent="Cats" unique_id=28127080 instance=ExtResource("4_ui660")]
-position = Vector2(2023, -1880)
+[node name="cat_spawner3" parent="Cats" unique_id=1109020533 instance=ExtResource("5_ui660")]
+position = Vector2(1752, -1106)
+
+[node name="cat_spawner4" parent="Cats" unique_id=1723845858 instance=ExtResource("5_ui660")]
+position = Vector2(1223, -1133)
+
+[node name="cat_spawner5" parent="Cats" unique_id=906610716 instance=ExtResource("5_ui660")]
+position = Vector2(737, -1129)
+
+[node name="cat_spawner6" parent="Cats" unique_id=375927732 instance=ExtResource("5_ui660")]
+position = Vector2(-1233, -1208)
+
+[node name="cat_spawner10" parent="Cats" unique_id=1552744603 instance=ExtResource("5_ui660")]
+position = Vector2(-700, -1235)
+
+[node name="cat_spawner7" parent="Cats" unique_id=743763066 instance=ExtResource("5_ui660")]
+position = Vector2(-1691, -1195)
+
+[node name="cat_spawner8" parent="Cats" unique_id=1174409809 instance=ExtResource("5_ui660")]
+position = Vector2(-2109, -1233)
+
+[node name="cat_spawner9" parent="Cats" unique_id=970514730 instance=ExtResource("5_ui660")]
+position = Vector2(-2564, -1251)
 
 [node name="Player" parent="." unique_id=53931604 instance=ExtResource("5_3lb3k")]
 position = Vector2(-700, -156)

@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 @onready var grab_area: Area2D = $GrabArea2D
-@onready var timer: Timer = $Timer
+
 var a: int = 0
 var b: int = 0
 
