@@ -3946,11 +3946,11 @@ position = Vector2(390, -8075)
 shape = SubResource("WorldBoundaryShape2D_dy8oy")
 one_way_collision = true
 
-[node name="Label" type="Label" parent="." unique_id=779358771]
+[node name="Label" type="Label" parent="Secret" unique_id=779358771]
 offset_left = 14.0
 offset_top = -8355.0
-offset_right = 441.0
-offset_bottom = -8306.0
+offset_right = 841.0
+offset_bottom = -8214.0
 theme_override_font_sizes/font_size = 50
 text = "congrats yuo found found a secret
 "
