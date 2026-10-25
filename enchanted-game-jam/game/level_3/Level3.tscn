@@ -2592,6 +2592,7 @@ position = Vector2(-760, -220)
 
 [node name="Cat" parent="." unique_id=2111745954 instance=ExtResource("3_h8oof")]
 position = Vector2(1929, -100)
+start_still = true
 
 [node name="RigidBody2D" parent="." unique_id=1527802656 instance=ExtResource("4_nqeel")]
 position = Vector2(224, -148)
