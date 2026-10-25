@@ -13,6 +13,5 @@ func _process(delta: float) -> void:
 
 
 func _on_pressure_plate_press() -> void:
-	if Gloabl.current_scene==6:
-		animation_player.play("move")
-		print("hi")
+	animation_player.play("move")
+	print("hi")
