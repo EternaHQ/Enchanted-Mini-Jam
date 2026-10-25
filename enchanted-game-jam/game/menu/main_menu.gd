@@ -17,3 +17,13 @@ func _on_quit_button_pressed() -> void:
 
 func _on_play_button_mouse_entered() -> void:
 	pass # Replace with function body.
+
+
+
+func _on_instruction_pressed() -> void:
+	get_tree().change_scene_to_file("res://game/menu/Instruction.tscn")
+
+
+func _on_back_pressed() -> void:
+	get_tree(). change_scene_to_file("res://game/menu/Main.tscn")# Replace with function body.
+	

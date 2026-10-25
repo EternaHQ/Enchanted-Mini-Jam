@@ -9,4 +9,3 @@ func close() -> void:
 
 
 	animation_player.play("close")
-

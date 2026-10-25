@@ -1,0 +1,291 @@
+[gd_scene format=3 uid="uid://dxp8aoxmwt3kf"]
+
+[ext_resource type="Script" uid="uid://7n3n1i8p16di" path="res://game/menu/main_menu.gd" id="1_lf765"]
+[ext_resource type="Texture2D" uid="uid://biexhibfbpq0h" path="res://game/menu/PNG_0001.png" id="2_x8o6n"]
+[ext_resource type="Texture2D" uid="uid://beeywmiywklvn" path="res://game/menu/PNG_0003.png" id="3_78aoy"]
+[ext_resource type="Texture2D" uid="uid://bbfwt4o6ge0rn" path="res://game/menu/PNG_0002.png" id="4_wcwmb"]
+[ext_resource type="FontFile" uid="uid://qb1gw4o02oah" path="res://game/menu/CatsAlphabet.ttf" id="5_mftjs"]
+[ext_resource type="Texture2D" uid="uid://b113uar7p4edh" path="res://game/menu/background/PNG_0001.png" id="6_1lcpb"]
+[ext_resource type="Texture2D" uid="uid://co1cf80n201m2" path="res://game/menu/background/PNG_0002.png" id="7_t33rj"]
+[ext_resource type="Texture2D" uid="uid://twxoo1j5dyin" path="res://game/menu/background/PNG_0003.png" id="8_rbtyi"]
+[ext_resource type="Texture2D" uid="uid://esd0q12ovdum" path="res://game/menu/background/PNG_0004.png" id="9_sxi4k"]
+[ext_resource type="Texture2D" uid="uid://dvnrfjyxsgdjh" path="res://game/menu/background/PNG_0005.png" id="10_qa5bd"]
+[ext_resource type="Texture2D" uid="uid://ch1lk5uuohejr" path="res://game/menu/background/PNG_0006.png" id="11_0i1wh"]
+[ext_resource type="Texture2D" uid="uid://2564axitk6a1" path="res://game/menu/background/PNG_0007.png" id="12_uuggf"]
+[ext_resource type="Texture2D" uid="uid://dj10lndaruxkv" path="res://game/menu/background/PNG_0008.png" id="13_k8bvh"]
+[ext_resource type="Texture2D" uid="uid://cpb5wkqe65kjr" path="res://game/menu/background/PNG_0009.png" id="14_lpfn7"]
+[ext_resource type="Texture2D" uid="uid://rltdv8t35i7u" path="res://game/menu/background/PNG_0010.png" id="15_yrt6r"]
+[ext_resource type="Texture2D" uid="uid://dtj6jee07c4o3" path="res://game/menu/background/PNG_0011.png" id="16_gfygk"]
+[ext_resource type="Texture2D" uid="uid://clh5oijmgvrfd" path="res://game/menu/background/PNG_0012.png" id="17_unblc"]
+[ext_resource type="Texture2D" uid="uid://cknaulgrnsd78" path="res://game/menu/background/PNG_0013.png" id="18_gdm1v"]
+[ext_resource type="Texture2D" uid="uid://dkcy50heewlpx" path="res://game/menu/background/PNG_0014.png" id="19_i2u5q"]
+[ext_resource type="Texture2D" uid="uid://be5u5ea2xrgkn" path="res://game/menu/background/PNG_0015.png" id="20_6tcrm"]
+[ext_resource type="Texture2D" uid="uid://ddifljehyov2s" path="res://game/menu/background/PNG_0016.png" id="21_blorx"]
+[ext_resource type="Texture2D" uid="uid://bbpnye562l0if" path="res://game/menu/background/PNG_0017.png" id="22_4xlf0"]
+[ext_resource type="Texture2D" uid="uid://cfchwadadl6xu" path="res://game/menu/background/PNG_0018.png" id="23_4vnvx"]
+[ext_resource type="Texture2D" uid="uid://2cdwjrucychx" path="res://game/menu/background/PNG_0019.png" id="24_bqsxv"]
+[ext_resource type="Texture2D" uid="uid://b62drbvbk3cxa" path="res://game/menu/background/PNG_0020.png" id="25_oom5e"]
+[ext_resource type="Texture2D" uid="uid://dvsxglgaxh4fy" path="res://game/menu/background/PNG_0021.png" id="26_1sb1x"]
+[ext_resource type="Texture2D" uid="uid://oswpf808q6v5" path="res://game/menu/background/PNG_0022.png" id="27_3fndq"]
+[ext_resource type="Texture2D" uid="uid://i20vve6tphrk" path="res://game/menu/background/PNG_0023.png" id="28_2snrt"]
+[ext_resource type="Texture2D" uid="uid://s656v1hwtprx" path="res://game/menu/background/PNG_0024.png" id="29_jcs5d"]
+[ext_resource type="Texture2D" uid="uid://0khh3wdhny4g" path="res://game/menu/background/PNG_0025.png" id="30_g1w77"]
+[ext_resource type="Texture2D" uid="uid://db34cbu50l7dh" path="res://game/menu/background/PNG_0026.png" id="31_rvvs8"]
+[ext_resource type="Texture2D" uid="uid://e2gmng8x1cit" path="res://game/menu/background/PNG_0027.png" id="32_k8pa1"]
+[ext_resource type="Texture2D" uid="uid://dq4u76rn3vpdx" path="res://game/menu/background/PNG_0028.png" id="33_vxkdm"]
+[ext_resource type="Texture2D" uid="uid://6suqq1korl2r" path="res://game/menu/background/PNG_0029.png" id="34_g3f1b"]
+[ext_resource type="Texture2D" uid="uid://dbr7e7p3kbrtv" path="res://game/menu/background/PNG_0030.png" id="35_ejwkd"]
+[ext_resource type="Texture2D" uid="uid://cb8xr2h2qw2rw" path="res://game/menu/background/PNG_0031.png" id="36_q5ldl"]
+[ext_resource type="Texture2D" uid="uid://b3lc28nph5w36" path="res://game/menu/background/PNG_0032.png" id="37_5aqqm"]
+[ext_resource type="Texture2D" uid="uid://bxpwj51r7shfd" path="res://game/menu/background/PNG_0033.png" id="38_we37n"]
+[ext_resource type="Texture2D" uid="uid://cf7tlagsk01xd" path="res://game/menu/background/PNG_0034.png" id="39_u1a1t"]
+[ext_resource type="Texture2D" uid="uid://wwdcmmw7i4gf" path="res://game/menu/background/PNG_0035.png" id="40_4e0ks"]
+[ext_resource type="Texture2D" uid="uid://dkdlalkhoqe1x" path="res://game/menu/background/PNG_0036.png" id="41_qkgkg"]
+[ext_resource type="Texture2D" uid="uid://d07pheey42j7u" path="res://game/menu/background/PNG_0037.png" id="42_iymx1"]
+[ext_resource type="Texture2D" uid="uid://c1l2e7uxdtw6x" path="res://game/menu/background/PNG_0038.png" id="43_277ge"]
+[ext_resource type="Texture2D" uid="uid://bf662akstvald" path="res://game/menu/background/PNG_0039.png" id="44_om5of"]
+[ext_resource type="Texture2D" uid="uid://dohor1i5o1jv7" path="res://game/menu/background/PNG_0040.png" id="45_8e7wb"]
+[ext_resource type="Texture2D" uid="uid://dnosspecpm766" path="res://game/menu/background/PNG_0041.png" id="46_3oifk"]
+[ext_resource type="Texture2D" uid="uid://d3hjx24u36g5i" path="res://game/menu/background/PNG_0042.png" id="47_22fen"]
+[ext_resource type="Texture2D" uid="uid://cua3t7sk4c7xi" path="res://game/menu/background/PNG_0043.png" id="48_c217s"]
+[ext_resource type="Texture2D" uid="uid://dpihfjmjthhfi" path="res://game/menu/background/PNG_0044.png" id="49_0im31"]
+[ext_resource type="Texture2D" uid="uid://bu7lnj7jagco0" path="res://game/menu/background/PNG_0045.png" id="50_mgxeo"]
+[ext_resource type="FontFile" uid="uid://cxg0wylmyvdty" path="res://game/menu/background/Cherry_Bomb_One/CherryBombOne-Regular.ttf" id="51_1qluq"]
+[ext_resource type="Texture2D" uid="uid://dp0664edrfx0f" path="res://game/menu/background/PNG_0046.png" id="51_fyb0p"]
+[ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://game/menu/background/PNG_0047.png" id="52_3k0q5"]
+[ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://game/menu/background/PNG_0048.png" id="53_j2i6k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_idj7w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1lcpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t33rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rbtyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sxi4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qa5bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0i1wh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uuggf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_k8bvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lpfn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_yrt6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gfygk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_unblc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gdm1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_i2u5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6tcrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_blorx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4xlf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4vnvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_bqsxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_oom5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_1sb1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_3fndq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2snrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_jcs5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_g1w77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_rvvs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_k8pa1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vxkdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_g3f1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ejwkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_q5ldl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_5aqqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_we37n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_u1a1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_4e0ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_qkgkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_iymx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_277ge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_om5of")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_8e7wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_3oifk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_22fen")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_c217s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_0im31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_mgxeo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_fyb0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_3k0q5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_j2i6k")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kym2j"]
+font = ExtResource("5_mftjs")
+font_size = 128
+font_color = Color(1, 1, 0.35686275, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpr0l"]
+font = ExtResource("51_1qluq")
+font_size = 36
+font_color = Color(0.6681974, 0.51975226, 0.20807984, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4vs3l"]
+font = ExtResource("5_mftjs")
+font_size = 64
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
+
+[node name="Control" type="Control" unique_id=1320536645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -588.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lf765")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=323228528]
+z_index = -1
+position = Vector2(960.25, 511.75)
+sprite_frames = SubResource("SpriteFrames_idj7w")
+autoplay = "default"
+frame_progress = 0.7091345
+
+[node name="Label" type="Label" parent="." unique_id=646088144]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 22.0
+offset_top = -6.0
+offset_right = 1355.0
+offset_bottom = 525.0
+text = "COOK THE
+
+    AT"
+label_settings = SubResource("LabelSettings_kym2j")
+
+[node name="How to PLay" type="Label" parent="." unique_id=51382752]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 447.0
+offset_right = 978.0
+offset_bottom = 1011.0
+text = "You are an evil mage
+ and you hate cats. 
+So your purpose for living 
+is hunting cats and cooking them! 
+Use a,d and space to move, 
+mouseclick to throw the cat 
+and r to restart the Level"
+label_settings = SubResource("LabelSettings_kpr0l")
+
+[node name="Back" type="TextureButton" parent="." unique_id=1423199965]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 1058.0
+offset_right = 287.0
+offset_bottom = 1442.0
+rotation = 4.712389
+texture_normal = ExtResource("2_x8o6n")
+texture_pressed = ExtResource("3_78aoy")
+texture_hover = ExtResource("4_wcwmb")
+
+[node name="Label" type="Label" parent="Back" unique_id=767693895]
+layout_mode = 0
+offset_left = 168.23535
+offset_top = 62.0
+offset_right = 429.23535
+offset_bottom = 310.23535
+rotation = 1.5707964
+text = "BACK"
+label_settings = SubResource("LabelSettings_4vs3l")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

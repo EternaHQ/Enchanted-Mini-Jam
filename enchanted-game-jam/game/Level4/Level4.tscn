@@ -2606,8 +2606,6 @@ tile_set = SubResource("TileSet_kpr0l")
 
 [node name="pressure_plate" parent="." unique_id=163490274 node_paths=PackedStringArray("Klappe") instance=ExtResource("7_apu1w")]
 position = Vector2(-51, -62)
-collision_layer = 0
-collision_mask = 14
 Klappe = NodePath("../Level4_Klappe")
 
 [node name="ParallaxManager" parent="." unique_id=65362214 instance=ExtResource("8_r1her")]

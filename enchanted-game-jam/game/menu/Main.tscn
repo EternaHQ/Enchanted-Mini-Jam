@@ -53,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://dp0664edrfx0f" path="res://game/menu/background/PNG_0046.png" id="47_e2umn"]
 [ext_resource type="Texture2D" uid="uid://drhso6jxway66" path="res://game/menu/background/PNG_0047.png" id="48_k6daw"]
 [ext_resource type="Texture2D" uid="uid://dus014kbwxfb7" path="res://game/menu/background/PNG_0048.png" id="49_05y1e"]
+[ext_resource type="Script" uid="uid://b0xosid8rmk1j" path="res://game/menu/instruction.gd" id="54_chqs2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v0s4m"]
 font = ExtResource("4_pbw6q")
@@ -221,6 +222,10 @@ font = ExtResource("4_pbw6q")
 font_size = 128
 font_color = Color(1, 1, 0.35686275, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_dy8oy"]
+font_size = 49
+font_color = Color(0.42745098, 0.22352941, 0.8666667, 1)
+
 [node name="Control" type="Control" unique_id=1320536645]
 layout_mode = 3
 anchors_preset = 15
@@ -265,9 +270,9 @@ label_settings = SubResource("LabelSettings_v0s4m")
 unique_name_in_owner = true
 layout_mode = 0
 offset_left = 31.0
-offset_top = 916.0
+offset_top = 1058.0
 offset_right = 287.0
-offset_bottom = 1300.0
+offset_bottom = 1442.0
 rotation = -1.5707964
 texture_normal = ExtResource("1_7sj7i")
 texture_pressed = ExtResource("3_3133c")
@@ -310,5 +315,30 @@ text = "COOK THE
     AT"
 label_settings = SubResource("LabelSettings_kym2j")
 
+[node name="Instruction" type="TextureButton" parent="." unique_id=395678735]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 883.0
+offset_right = 287.0
+offset_bottom = 1267.0
+rotation = 4.712389
+texture_normal = ExtResource("1_7sj7i")
+texture_pressed = ExtResource("3_3133c")
+texture_hover = ExtResource("2_ep8v8")
+script = ExtResource("54_chqs2")
+
+[node name="Label" type="Label" parent="Instruction" unique_id=984323965]
+layout_mode = 0
+offset_left = 191.69598
+offset_top = 27.0
+offset_right = 513.696
+offset_bottom = 168.0
+rotation = 1.5707964
+theme_override_fonts/font = ExtResource("4_pbw6q")
+text = "HOW
+TO PLAY"
+label_settings = SubResource("LabelSettings_dy8oy")
+
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Instruction" to="." method="_on_instruction_pressed"]

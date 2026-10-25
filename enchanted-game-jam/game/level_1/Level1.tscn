@@ -3935,7 +3935,6 @@ max_jump_height = 4096.0
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1269259616]
 position = Vector2(-6, 5)
-zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
 
