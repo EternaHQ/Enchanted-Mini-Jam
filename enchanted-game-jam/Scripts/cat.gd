@@ -7,13 +7,16 @@ extends CharacterBody2D
 
 var player: CharacterBody2D
 var gravity: float = 60.0
+var downward_pull: float = 120
 var is_grabbed: bool = false
 var just_launched = false
+var in_downward_pull: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	await get_tree().process_frame
 	player = get_tree().get_first_node_in_group("player")
+	add_to_group("cat")
 
 func _physics_process(delta: float) -> void:
 	if is_grabbed:
@@ -23,7 +26,10 @@ func _physics_process(delta: float) -> void:
 		if !just_launched and randf_range(0,120) == 120:
 			movement()
 		if ! is_on_floor():
-			velocity.y += gravity
+			if in_downward_pull:
+				velocity.y += downward_pull
+			else:
+				velocity.y += gravity
 		if is_on_floor():
 			velocity.y = 0
 

@@ -56,7 +56,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_bhhdu"]
 radius = 58.5235
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=53931604]
+[node name="Player" type="CharacterBody2D" unique_id=53931604]
 collision_layer = 4
 script = ExtResource("1_kyqiw")
 jump_speed = 1000
