@@ -3,13 +3,15 @@ var level=1
 
 var Level1 = "res://Scenes/Level1.tscn"
 var Level2 = "res://Scenes/Level2.tscn"
+var Level3 = "res://Scenes/Level3.tscn"
 func _physics_process(delta: float) -> void:
 	pass
-var current_scene=1
 var next_level
 func _ready() -> void:
-	if current_scene==1:
+	if Gloabl.current_scene==1:
 		next_level=Level2
+	if Gloabl.current_scene==2:
+		next_level=Level3
 
 
 
@@ -24,7 +26,7 @@ func _on_area_top_area_entered(area: Area2D) -> void:
 		print("cat is in cauldron")
 		area.get_parent().queue_free()
 		get_tree().change_scene_to_file(next_level)
-		current_scene+=1
+		Gloabl.current_scene+=1
 # Replace with function body.
 
 func _on_downward_pull_body_entered(body: Node2D) -> void:

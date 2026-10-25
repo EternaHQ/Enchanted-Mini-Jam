@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://njkqo6qhl0v4" path="res://Scenes/cat.tscn" id="3_h8oof"]
 [ext_resource type="PackedScene" uid="uid://02uhi7ydj00u" path="res://Chest.tscn" id="4_nqeel"]
 [ext_resource type="Texture2D" uid="uid://44h84phusr14" path="res://Assets/Sprites/enchanted game jam - Kopie/not player/not plant/terrain.png" id="5_u5lf4"]
+[ext_resource type="PackedScene" uid="uid://ioa3nbtu13r4" path="res://Moving_platform.tscn" id="6_084pi"]
+[ext_resource type="PackedScene" uid="uid://dlr2bc1iwol5v" path="res://Pressure_plate.tscn" id="7_43mlh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6r6c"]
 texture = ExtResource("5_u5lf4")
@@ -2588,10 +2590,10 @@ position_smoothing_speed = 3.0
 position = Vector2(-760, -220)
 
 [node name="Cat" parent="." unique_id=2111745954 instance=ExtResource("3_h8oof")]
-position = Vector2(586, -76)
+position = Vector2(1929, -100)
 
 [node name="RigidBody2D" parent="." unique_id=1527802656 instance=ExtResource("4_nqeel")]
-position = Vector2(262, -141)
+position = Vector2(224, -148)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2069794474]
 scale = Vector2(2, 2)
@@ -2599,3 +2601,9 @@ tile_map_data = PackedByteArray("AADf/wAAAAACAAAAAADf/wEAAAACAAEAAADf/wIAAAACAAI
 tile_set = SubResource("TileSet_kpr0l")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=62290796]
+
+[node name="moving_platform" parent="." unique_id=1663043384 instance=ExtResource("6_084pi")]
+position = Vector2(869, 16)
+
+[node name="pressure_plate" parent="." unique_id=163490274 instance=ExtResource("7_43mlh")]
+position = Vector2(-51, -62)
