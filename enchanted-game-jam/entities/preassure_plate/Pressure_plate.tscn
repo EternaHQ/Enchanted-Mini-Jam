@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dlr2bc1iwol5v"]
 
-[ext_resource type="Script" uid="uid://c2dtvu0qwqrgx" path="res://entities/preassure_plate/area_2d.gd" id="1_p3gwl"]
+[ext_resource type="Script" uid="uid://c2dtvu0qwqrgx" path="res://entities/preassure_plate/preassure_plate.gd" id="1_p3gwl"]
 [ext_resource type="Texture2D" uid="uid://dk57jqrash6s4" path="res://entities/preassure_plate/PNG_0001.png" id="2_8fxpd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kpr0l"]
@@ -17,9 +17,11 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kpr0l"]
 height = 115.63092
 
-[node name="pressure_plate" type="Area2D" unique_id=163490274 node_paths=PackedStringArray("Klappe")]
-collision_layer = 255
-collision_mask = 255
+
+[node name="pressure_plate" type="Area2D" unique_id=163490274]
+collision_layer = 0
+collision_mask = 14
+
 script = ExtResource("1_p3gwl")
 Klappe = NodePath(".")
 
